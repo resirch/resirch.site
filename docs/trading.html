@@ -370,7 +370,7 @@
                         <img src="${getAvatarUrl(postUser)}" alt="${postUser.username}'s avatar">
                         <span>${postUser.username}</span>
                         ${currentUser && (currentUser.id === postUser.discordId || currentUser.isAdmin)
-                            ? `<button class="delete-post-btn" data-post-id="${post._id}">Delete</button>`
+                            ? `<button class="delete-post-btn styled-button" data-post-id="${post._id}">Delete</button>`
                             : ''}
                     </div>
                     <h3>${post.title}</h3>
@@ -455,7 +455,7 @@
                             const response = await fetch('/api/addReply', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ postId: post.id, content: replyContent })
+                                body: JSON.stringify({ postId: post._id, content: replyContent }),
                             });
 
                             const result = await response.json();
@@ -466,7 +466,7 @@
                                 document.getElementById('reply-content').value = '';
 
                                 // Refresh the post modal to show the new reply
-                                openPostModal(post.id);
+                                openPostModal(post._id);
                             } else {
                                 alert(result.error || 'An error occurred while submitting the reply.');
                             }
@@ -615,7 +615,7 @@
                     const response = await fetch('/api/deletePost', {
                         method: 'DELETE',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ postId })
+                        body: JSON.stringify({ postId }),
                     });
 
                     const result = await response.json();

@@ -26,8 +26,8 @@ db.once('open', () => {
 const app = express();
 
 // Body Parser Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Session Middleware
 app.use(session({
@@ -77,7 +77,6 @@ app.get('/api/getPosts', async (req, res) => {
     try {
         const posts = await Post.find()
             .populate('user', 'username avatar discordId')
-            .populate('replies.user', 'username avatar discordId')
             .lean();
 
         res.json(posts);
@@ -178,7 +177,7 @@ app.post('/api/addReply', async (req, res) => {
 
     const { postId, content } = req.body;
 
-    if (content.length === 0 || content.length > 1000) {
+    if (!content || content.length === 0 || content.length > 1000) {
         return res.status(400).json({ error: 'Invalid content length' });
     }
 
@@ -263,6 +262,65 @@ app.use(express.static(path.join(__dirname, 'docs')));
 // Default route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
+});
+
+const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
+const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET;
+const REDIRECT_URI = 'https://resirch.site/auth/discord/callback';
+
+// Endpoint for Discord OAuth callback
+app.get('/auth/discord/callback', async (req, res) => {
+    const code = req.query.code;
+
+    if (!code) {
+        return res.status(400).send('No code provided');
+    }
+
+    try {
+        // Exchange code for access token
+        const tokenResponse = await axios.post('https://discord.com/api/oauth2/token', new URLSearchParams({
+            client_id: CLIENT_ID,
+            client_secret: CLIENT_SECRET,
+            grant_type: 'authorization_code',
+            code,
+            redirect_uri: REDIRECT_URI,
+            scope: 'identify',
+        }).toString(), {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        });
+
+        const accessToken = tokenResponse.data.access_token;
+
+        // Fetch user data
+        const userResponse = await axios.get('https://discord.com/api/users/@me', {
+            headers: {
+                Authorization: `Bearer ${accessToken}`,
+            },
+        });
+
+        const discordUser = userResponse.data;
+
+        // Upsert user in database
+        let user = await User.findOneAndUpdate(
+            { discordId: discordUser.id },
+            {
+                username: discordUser.username,
+                avatar: discordUser.avatar,
+            },
+            { upsert: true, new: true }
+        );
+
+        // Save user ID in session
+        req.session.userId = user._id;
+
+        // Redirect back to the trading page
+        res.redirect('/trading.html');
+    } catch (error) {
+        console.error('Error during Discord OAuth callback:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Start the server
