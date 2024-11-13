@@ -1,6 +1,6 @@
 # Ignore all other Python scripts
 *.py
-*.env
+.env
 
 # Ignore compiled Python files
 __pycache__/
