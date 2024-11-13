@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const axios = require('axios');
 const path = require('path');
 const session = require('express-session');
@@ -35,7 +34,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost/your_database_name',
+        mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost/trading-database',
         collectionName: 'sessions'
     }),
     cookie: { maxAge: 2 * 7 * 24 * 60 * 60 * 1000 } // Expires in 2 weeks
@@ -70,7 +69,7 @@ app.get('/auth/discord/user', (req, res) => {
     }
 });
 
-// Other API routes
+// Endpoint to get all posts
 app.get('/api/getPosts', async (req, res) => {
     try {
         const posts = await Post.find()
@@ -80,6 +79,27 @@ app.get('/api/getPosts', async (req, res) => {
         res.json(posts);
     } catch (error) {
         console.error('Error fetching posts:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// Endpoint to get a single post by ID
+app.get('/api/getPost', async (req, res) => {
+    const postId = req.query.id;
+
+    try {
+        const post = await Post.findById(postId)
+            .populate('user', 'username avatar discordId')
+            .populate('replies.user', 'username avatar discordId')
+            .lean();
+
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        res.json(post);
+    } catch (error) {
+        console.error('Error fetching post:', error);
         res.status(500).json({ error: 'Internal server error' });
     }
 });
@@ -218,16 +238,17 @@ app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
 // Place the static file middleware AFTER all other routes
 app.use(express.static(path.join(__dirname, 'docs')));
 
-// Default route
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'docs', 'index.html'));
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
+// Endpoint for Discord OAuth callback
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = process.env.REDIRECT_URI;
 
-// Endpoint for Discord OAuth callback
 app.get('/auth/discord/callback', async (req, res) => {
     const code = req.query.code;
 
@@ -285,12 +306,6 @@ app.get('/auth/discord/callback', async (req, res) => {
         }
         res.status(500).send('Internal Server Error');
     }
-});
-
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
 });
 
 
