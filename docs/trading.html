@@ -337,6 +337,9 @@
                 }
             } catch (error) {
                 console.error('Error fetching user data:', error);
+            } finally {
+                // Initialize the page after currentUser is set
+                init();
             }
         };
 
@@ -369,7 +372,7 @@
                     <div class="post-header">
                         <img src="${getAvatarUrl(postUser)}" alt="${postUser.username}'s avatar">
                         <span>${postUser.username}</span>
-                        ${currentUser && (currentUser.id === postUser.discordId || currentUser.isAdmin)
+                        ${currentUser && (currentUser.discordId === postUser.discordId || currentUser.isAdmin)
                             ? `<button class="delete-post-btn styled-button" data-post-id="${post._id}">Delete</button>`
                             : ''}
                     </div>
@@ -425,7 +428,7 @@
                                 <div class="post-header">
                                     <img src="${getAvatarUrl(reply.user)}" alt="${reply.user.username}'s avatar">
                                     <span>${reply.user.username}</span>
-                                    ${currentUser && (currentUser.id === reply.user.discordId || currentUser.isAdmin)
+                                    ${currentUser && (currentUser.discordId === reply.user.discordId || currentUser.isAdmin)
                                         ? `<button class="delete-reply-btn" data-reply-id="${reply._id}" data-post-id="${post._id}">Delete</button>`
                                         : ''}
                                 </div>
@@ -579,10 +582,9 @@
 
         // Helper function to get avatar URL
         function getAvatarUrl(user) {
-            if (user && user.avatar && user.id) {
-                return `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`;
-            } else if (user && user.avatar && user.discordId) {
-                return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
+            const discordId = user.discordId || user.id;
+            if (user && user.avatar && discordId) {
+                return `https://cdn.discordapp.com/avatars/${discordId}/${user.avatar}.png`;
             } else {
                 return 'media/default_avatar.png';
             }
@@ -614,13 +616,14 @@
                 try {
                     const response = await fetch(`/api/deletePost/${postId}`, {
                         method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
                     });
 
                     const result = await response.json();
 
                     if (result.success) {
                         showPostedPopup('Post deleted!');
-                        // Refresh posts
+                        // Refresh the posts
                         init();
                     } else {
                         alert(result.error || 'An error occurred while deleting the post.');
@@ -637,13 +640,14 @@
                 try {
                     const response = await fetch(`/api/deleteReply/${postId}/${replyId}`, {
                         method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
                     });
 
                     const result = await response.json();
 
                     if (result.success) {
                         showPostedPopup('Reply deleted!');
-                        // Optionally refresh the post or replies
+                        // Refresh the post modal to show the updated replies
                         openPostModal(postId);
                     } else {
                         alert(result.error || 'An error occurred while deleting the reply.');

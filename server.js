@@ -56,9 +56,7 @@ app.use(async (req, res, next) => {
     next();
 });
 
-// Define your API routes BEFORE the static file middleware
-
-// Endpoint to get the currently logged-in user
+// Define your API routes here
 app.get('/auth/discord/user', (req, res) => {
     if (req.user) {
         res.json({
@@ -72,7 +70,7 @@ app.get('/auth/discord/user', (req, res) => {
     }
 });
 
-// Endpoint to fetch all posts
+// Other API routes
 app.get('/api/getPosts', async (req, res) => {
     try {
         const posts = await Post.find()
@@ -86,7 +84,6 @@ app.get('/api/getPosts', async (req, res) => {
     }
 });
 
-// Endpoint to create a new post
 app.post('/api/createPost', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
@@ -118,29 +115,6 @@ app.post('/api/createPost', async (req, res) => {
     }
 });
 
-// Endpoint to get a single post by ID
-app.get('/api/getPost', async (req, res) => {
-    const postId = req.query.id;
-
-    try {
-        // Find the post by ID
-        const post = await Post.findById(postId)
-            .populate('user', 'username avatar discordId')
-            .populate('replies.user', 'username avatar discordId')
-            .lean();
-
-        if (!post) {
-            return res.status(404).json({ error: 'Post not found' });
-        }
-
-        res.json(post);
-    } catch (error) {
-        console.error('Error fetching post:', error);
-        res.status(500).json({ error: 'Internal server error' });
-    }
-});
-
-// Endpoint to delete a post
 app.delete('/api/deletePost/:postId', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
@@ -169,7 +143,6 @@ app.delete('/api/deletePost/:postId', async (req, res) => {
     }
 });
 
-// Endpoint to add a reply to a post
 app.post('/api/addReply', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
@@ -206,8 +179,8 @@ app.post('/api/addReply', async (req, res) => {
     }
 });
 
-// Endpoint to delete a reply
 app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
+    console.log(`Received DELETE request for deleteReply with postId: ${req.params.postId}, replyId: ${req.params.replyId}`);
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
     }
@@ -241,20 +214,6 @@ app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
-
-// Endpoint to log out the user
-app.post('/auth/discord/logout', (req, res) => {
-    // Destroy the session
-    req.session.destroy((err) => {
-        if (err) {
-            console.error('Error destroying session:', err);
-            return res.status(500).json({ error: 'Internal server error' });
-        }
-        res.json({ success: true });
-    });
-});
-
-// Other API routes (e.g., /api/addReply, /api/deletePost, /api/deleteReply) should be defined here as well
 
 // Place the static file middleware AFTER all other routes
 app.use(express.static(path.join(__dirname, 'docs')));
