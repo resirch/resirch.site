@@ -264,8 +264,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
-const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET;
-const REDIRECT_URI = 'https://resirch.site/auth/discord/callback';
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REDIRECT_URI = process.env.REDIRECT_URI;
 
 // Endpoint for Discord OAuth callback
 app.get('/auth/discord/callback', async (req, res) => {
@@ -276,9 +277,9 @@ app.get('/auth/discord/callback', async (req, res) => {
     }
 
     try {
-        // Exchange code for access token without the 'scope' parameter
+        // Exchange code for access token
         const tokenResponse = await axios.post('https://discord.com/api/oauth2/token', new URLSearchParams({
-            client_id: "1306118587794063420",
+            client_id: CLIENT_ID,
             client_secret: CLIENT_SECRET,
             grant_type: 'authorization_code',
             code,
@@ -316,7 +317,13 @@ app.get('/auth/discord/callback', async (req, res) => {
         // Redirect back to the trading page
         res.redirect('/trading.html');
     } catch (error) {
-        console.error('Error during Discord OAuth callback:', error.response ? error.response.data : error.message);
+        if (error.response) {
+            console.error('Error data:', error.response.data);
+            console.error('Error status:', error.response.status);
+            console.error('Error headers:', error.response.headers);
+        } else {
+            console.error('Error message:', error.message);
+        }
         res.status(500).send('Internal Server Error');
     }
 });
