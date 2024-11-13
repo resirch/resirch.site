@@ -21,7 +21,10 @@ app.use(session({
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = 'https://resirch.site/auth/discord/callback';
+const REDIRECT_URI = process.env.REDIRECT_URI;
+
+console.log('Client ID:', process.env.CLIENT_ID);
+console.log('Client Secret:', process.env.CLIENT_SECRET);
 
 // Endpoint to handle the OAuth2 callback
 app.get('/auth/discord/callback', async (req, res) => {
@@ -95,3 +98,12 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+// pm2 start server.js to start the server
+// pm2 delete server.js to stop the server
+// pm2 list to see the server status
+// pm2 logs server.js to see the server logs
+// pm2 monit to see the server metrics
+// pm2 save to save the server state (recommended after stopping the server)
+// pm2 startup to start the server on system startup (requires sudo)
+// pm2 delete all to delete all pm2 processes
