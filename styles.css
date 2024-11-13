@@ -303,13 +303,13 @@ p {
 }
 
 #buttons {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    text-align: center;
 }
 
 #buttons button {
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0;
     text-decoration: none;
     color: var(--button-red);
     font-size: 1.2rem;
