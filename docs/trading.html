@@ -612,10 +612,8 @@
         async function deletePost(postId) {
             if (confirm('Are you sure you want to delete this post?')) {
                 try {
-                    const response = await fetch('/api/deletePost', {
+                    const response = await fetch(`/api/deletePost/${postId}`, {
                         method: 'DELETE',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ postId }),
                     });
 
                     const result = await response.json();
@@ -637,16 +635,16 @@
         async function deleteReply(postId, replyId) {
             if (confirm('Are you sure you want to delete this reply?')) {
                 try {
-                    const response = await fetch('/api/deleteReply', {
+                    const response = await fetch(`/api/deleteReply/${postId}/${replyId}`, {
                         method: 'DELETE',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ postId, replyId })
                     });
 
                     const result = await response.json();
 
                     if (result.success) {
                         showPostedPopup('Reply deleted!');
+                        // Optionally refresh the post or replies
+                        openPostModal(postId);
                     } else {
                         alert(result.error || 'An error occurred while deleting the reply.');
                     }

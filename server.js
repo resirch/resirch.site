@@ -141,12 +141,12 @@ app.get('/api/getPost', async (req, res) => {
 });
 
 // Endpoint to delete a post
-app.delete('/api/deletePost', async (req, res) => {
+app.delete('/api/deletePost/:postId', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
     }
 
-    const { postId } = req.body;
+    const { postId } = req.params;
 
     try {
         const post = await Post.findById(postId);
@@ -207,12 +207,12 @@ app.post('/api/addReply', async (req, res) => {
 });
 
 // Endpoint to delete a reply
-app.delete('/api/deleteReply', async (req, res) => {
+app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
     }
 
-    const { postId, replyId } = req.body;
+    const { postId, replyId } = req.params;
 
     try {
         const post = await Post.findById(postId);
@@ -264,7 +264,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
-const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
 const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET;
 const REDIRECT_URI = 'https://resirch.site/auth/discord/callback';
 
@@ -277,14 +276,13 @@ app.get('/auth/discord/callback', async (req, res) => {
     }
 
     try {
-        // Exchange code for access token
+        // Exchange code for access token without the 'scope' parameter
         const tokenResponse = await axios.post('https://discord.com/api/oauth2/token', new URLSearchParams({
-            client_id: CLIENT_ID,
+            client_id: "1306118587794063420",
             client_secret: CLIENT_SECRET,
             grant_type: 'authorization_code',
             code,
             redirect_uri: REDIRECT_URI,
-            scope: 'identify',
         }).toString(), {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
@@ -318,7 +316,7 @@ app.get('/auth/discord/callback', async (req, res) => {
         // Redirect back to the trading page
         res.redirect('/trading.html');
     } catch (error) {
-        console.error('Error during Discord OAuth callback:', error);
+        console.error('Error during Discord OAuth callback:', error.response ? error.response.data : error.message);
         res.status(500).send('Internal Server Error');
     }
 });
