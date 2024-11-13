@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trading Page</title>
+    <!-- Include your existing CSS files here -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Additional styles specific to the trading page -->
+    <style>
+        /* Specific styles for the trading page */
+        /* Adjusted to match existing CSS without modifying styles.css */
+
+        /* Styles for the search bar */
+        .search-container {
+            margin: 20px;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+        }
+
+        /* Styles for the posts grid */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+        .post {
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            cursor: pointer;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .post:hover {
+            background-color: var(--accent-color-transparent);
+        }
+        .post h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        /* Styles for the post modal */
+        #post-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 18, 18, 0.9); /* Adjusted for background color */
+            display: none;
+            z-index: 1000;
+        }
+        #post-modal .modal-content {
+            background: var(--background-color);
+            margin: 50px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+        }
+        #post-modal .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 24px;
+            color: var(--text-color);
+        }
+        /* Styles for the replies */
+        .replies {
+            margin-top: 30px;
+        }
+        .reply {
+            border-top: 1px solid var(--accent-color);
+            padding: 10px 0;
+        }
+        /* User info at the top of the post */
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .post-header img {
+            border-radius: 50%;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .post-header span {
+            font-weight: bold;
+        }
+        /* Buttons */
+        .styled-button {
+            background-color: transparent;
+            border: 2px solid var(--accent-color-transparent);
+            color: var(--accent-color-transparent);
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .styled-button:hover {
+            background-color: var(--accent-color-transparent);
+            color: var(--background-color);
+        }
+        /* Reply Form */
+        #reply-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            resize: vertical;
+            min-height: 100px;
+        }
+        #reply-form button {
+            margin-top: 10px;
+        }
+        /* Create Post Modal */
+        #create-post-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 18, 18, 0.9);
+            display: none;
+            z-index: 1000;
+        }
+        #create-post-modal .modal-content {
+            background: var(--background-color);
+            margin: 50px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+        }
+        #create-post-modal .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 24px;
+            color: var(--text-color);
+        }
+        #create-post-form input[type="text"],
+        #create-post-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        #create-post-form button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Existing Navbar -->
+    <header>
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        </script>
+    </header>
+
+    <!-- Discord Login Button -->
+    <div id="login-container" class="center-text">
+        <button id="discord-login" class="styled-button">Login with Discord</button>
+        <!-- Show username if logged in -->
+        <span id="user-info"></span>
+    </div>
+
+    <!-- Create Post Button -->
+    <div class="center-text">
+        <button id="create-post-btn" class="styled-button">Create Post</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search trading posts...">
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="posts-grid" id="posts-grid">
+        <!-- Trading posts will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Post Modal -->
+    <div id="post-modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <!-- Post details and replies will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div id="create-post-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-create-modal">&times;</span>
+            <h3>Create New Post</h3>
+            <form id="create-post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required maxlength="100">
+                <textarea id="post-content" placeholder="Post Content" required maxlength="1000"></textarea>
+                <button type="submit" class="styled-button">Submit Post</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include your existing JS files here -->
+    <script src="your-existing-scripts.js"></script>
+    <!-- Additional JavaScript for the trading page -->
+    <script>
+        // JavaScript code for the trading page
+
+        // Placeholder for current user info after Discord login
+        let currentUser = null;
+
+        // Function to update the UI after the user is logged in
+        function updateUIForLoggedInUser() {
+            document.getElementById('discord-login').style.display = 'none';
+            document.getElementById('user-info').textContent = `Logged in as ${currentUser.username}`;
+        }
+
+        // Event listener for the Discord login button
+        document.getElementById('discord-login').addEventListener('click', () => {
+            const params = new URLSearchParams({
+                client_id: 'YOUR_CLIENT_ID',
+                redirect_uri: 'https://resirch.site/auth/discord/callback',
+                response_type: 'code',
+                scope: 'identify'
+            });
+            window.location.href = `https://discord.com/oauth2/authorize?${params.toString()}`;
+        });
+
+        // Check if user is already logged in
+        window.onload = async () => {
+            try {
+                // Fetch user data from the server
+                const response = await fetch('/auth/discord/user');
+                if (response.ok) {
+                    currentUser = await response.json();
+                    updateUIForLoggedInUser();
+                }
+            } catch (error) {
+                console.error('Error fetching user data:', error);
+            }
+        };
+
+        // Function to fetch posts from the server (needs server-side implementation)
+        async function fetchPosts() {
+            // Fetch posts from your server
+            // Example:
+            // const response = await fetch('/api/getPosts');
+            // const posts = await response.json();
+
+            // Placeholder data
+            const posts = [
+                {
+                    id: 1,
+                    title: 'Looking to trade Sword A',
+                    content: 'I have Sword A and I am looking for Shield B.',
+                    datePosted: '2023-11-10',
+                    pinned: true,
+                    user: {
+                        username: 'User1',
+                        avatarUrl: 'https://cdn.discordapp.com/avatars/user1/avatar.png'
+                    }
+                },
+                // More posts...
+            ];
+            return posts;
+        }
+
+        // Function to render posts on the page
+        function renderPosts(posts) {
+            const postsGrid = document.getElementById('posts-grid');
+            postsGrid.innerHTML = ''; // Clear existing posts
+
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.classList.add('post');
+                postElement.dataset.postId = post.id;
+
+                postElement.innerHTML = `
+                    <div class="post-header">
+                        <img src="${post.user.avatarUrl}" alt="${post.user.username}'s avatar">
+                        <span>${post.user.username}</span>
+                    </div>
+                    <h3>${post.title}</h3>
+                    <p>${post.content.substring(0, 100)}...</p>
+                `;
+
+                // Add event listener to open the post modal when clicked
+                postElement.addEventListener('click', () => openPostModal(post.id));
+
+                postsGrid.appendChild(postElement);
+            });
+        }
+
+        // Function to open the post modal with post details and replies
+        async function openPostModal(postId) {
+            // Fetch post details and replies from your server
+            // Example:
+            // const response = await fetch(`/api/getPost?id=${postId}`);
+            // const post = await response.json();
+
+            // Placeholder data
+            const post = {
+                id: postId,
+                title: 'Looking to trade Sword A',
+                content: 'I have Sword A and I am looking for Shield B. Please contact me if interested.',
+                datePosted: '2023-11-10',
+                user: {
+                    username: 'User1',
+                    avatarUrl: 'https://cdn.discordapp.com/avatars/user1/avatar.png'
+                },
+                replies: [
+                    {
+                        id: 1,
+                        content: 'I have Shield B, interested in swapping?',
+                        user: {
+                            username: 'User2',
+                            avatarUrl: 'https://cdn.discordapp.com/avatars/user2/avatar.png'
+                        }
+                    },
+                    // More replies...
+                ]
+            };
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <span class="close-btn" id="close-modal">&times;</span>
+                <div class="post-header">
+                    <img src="${post.user.avatarUrl}" alt="${post.user.username}'s avatar">
+                    <span>${post.user.username}</span>
+                </div>
+                <h3>${post.title}</h3>
+                <p>${post.content}</p>
+                <!-- Replies Section -->
+                <div class="replies">
+                    <h4>Replies</h4>
+                    ${post.replies.map(reply => `
+                        <div class="reply">
+                            <div class="post-header">
+                                <img src="${reply.user.avatarUrl}" alt="${reply.user.username}'s avatar">
+                                <span>${reply.user.username}</span>
+                            </div>
+                            <p>${reply.content}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                <!-- Reply Form -->
+                <form id="reply-form">
+                    <textarea id="reply-content" maxlength="1000" required placeholder="Write your reply here..."></textarea>
+                    <button type="submit" class="styled-button">Reply</button>
+                </form>
+            `;
+
+            // Event listener for closing the modal
+            document.getElementById('close-modal').addEventListener('click', () => {
+                document.getElementById('post-modal').style.display = 'none';
+            });
+
+            // Event listener for submitting a reply
+            document.getElementById('reply-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const replyContent = document.getElementById('reply-content').value;
+
+                if (replyContent.length > 0 && replyContent.length <= 1000) {
+                    // Submit reply to your server
+                    // Example:
+                    // await fetch('/api/addReply', {
+                    //     method: 'POST',
+                    //     headers: { 'Content-Type': 'application/json' },
+                    //     body: JSON.stringify({ postId: post.id, content: replyContent })
+                    // });
+
+                    // Placeholder for adding the reply to the UI
+                    alert('Reply submitted!');
+                    document.getElementById('reply-content').value = '';
+                } else {
+                    alert('Reply must be between 1 and 1000 characters.');
+                }
+            });
+
+            document.getElementById('post-modal').style.display = 'block';
+        }
+
+        // Function to open the create post modal
+        function openCreatePostModal() {
+            if (!currentUser) {
+                alert('You need to be logged in to create a post.');
+                return;
+            }
+
+            document.getElementById('create-post-modal').style.display = 'block';
+        }
+
+        // Event listener for closing the create post modal
+        document.getElementById('close-create-modal').addEventListener('click', () => {
+            document.getElementById('create-post-modal').style.display = 'none';
+        });
+
+        // Event listener for opening the create post modal
+        document.getElementById('create-post-btn').addEventListener('click', openCreatePostModal);
+
+        // Event listener for submitting a new post
+        document.getElementById('create-post-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const title = document.getElementById('post-title').value;
+            const content = document.getElementById('post-content').value;
+
+            if (title.length > 0 && title.length <= 100 && content.length > 0 && content.length <= 1000) {
+                // Submit post to your server
+                // Example:
+                // await fetch('/api/createPost', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify({ title, content, user: currentUser })
+                // });
+
+                // Placeholder for adding the post to the UI
+                alert('Post submitted!');
+                document.getElementById('create-post-modal').style.display = 'none';
+                // Refresh posts
+                init();
+            } else {
+                alert('Title must be between 1 and 100 characters. Content must be between 1 and 1000 characters.');
+            }
+        });
+
+        // Function to initialize the page
+        async function init() {
+            let posts = await fetchPosts();
+
+            // Sort posts: pinned posts first, then by date posted
+            posts.sort((a, b) => {
+                if (a.pinned && !b.pinned) return -1;
+                if (!a.pinned && b.pinned) return 1;
+                return new Date(b.datePosted) - new Date(a.datePosted);
+            });
+
+            renderPosts(posts);
+
+            // Search functionality
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const filteredPosts = posts.filter(post => post.title.toLowerCase().includes(query));
+                renderPosts(filteredPosts);
+            });
+        }
+
+        // Initialize the page when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
