@@ -358,11 +358,14 @@
                 postElement.classList.add('post');
                 postElement.dataset.postId = post._id;
 
+                // Access user information from post.user
+                const postUser = post.user || { username: 'Unknown', avatar: null, discordId: null };
+
                 postElement.innerHTML = `
                     <div class="post-header">
-                        <img src="${getAvatarUrl(post.user)}" alt="${post.user.username}'s avatar">
-                        <span>${post.user.username}</span>
-                        ${currentUser && (currentUser.id === post.user.discordId || currentUser.isAdmin)
+                        <img src="${getAvatarUrl(postUser)}" alt="${postUser.username}'s avatar">
+                        <span>${postUser.username}</span>
+                        ${currentUser && (currentUser.id === postUser.discordId || currentUser.isAdmin)
                             ? `<button class="delete-post-btn" data-post-id="${post._id}">Delete</button>`
                             : ''}
                     </div>
@@ -556,9 +559,11 @@
 
         // Helper function to get avatar URL
         function getAvatarUrl(user) {
-            return user.avatar
-                ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
-                : 'media/default_avatar.png';
+            if (user.avatar && user.discordId) {
+                return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
+            } else {
+                return 'media/default_avatar.png';
+            }
         }
 
         // Function to show the posted modal
