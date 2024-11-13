@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blacksmithing - Resirch.site</title>
     <link rel="stylesheet" href="styles.css?v=1.1">
 </head>
@@ -18,18 +17,54 @@
                 .catch(error => console.error('Error loading navbar:', error));
         </script>
     </header>
-    <div class="container">
+
+    <!-- Introductory Content -->
+    <div class="intro-container">
         <h1>Blacksmithing</h1>
         <p>Welcome to the Sword Blox Online: Rebirth Blacksmithing project page.</p>
         <p>This provides a checklist for any items you can craft in the game.</p>
     </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Favorites List -->
+        <aside class="favorites">
+            <h2>Favorites</h2>
+            <ul id="favorites-list">
+                <!-- Favorite items will be listed here -->
+            </ul>
+        </aside>
+
+        <!-- Crafting Section -->
+        <div class="main-content">
+            <section class="crafting-section">
+                <div class="search-section">
+                    <label for="item-search">Choose the item you are crafting:</label><br>
+                    <input type="text" id="item-search" placeholder="Search for an item...">
+                    <div id="dropdown-container">
+                        <select id="item-select" size="5"></select>
+                    </div>
+                    <button id="favorite-button">Favorite</button>
+                </div>
+                <div id="item-requirements">
+                    <!-- The list of required materials will appear here -->
+                </div>
+                <!-- Only one clear all button at the bottom center -->
+                <div id="buttons">
+                    <button id="clear-all">Clear All Counts</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <footer>
-        <p style="font-size: 0.8rem; color: var(--text-color);">
+        <p style="font-size: 0.8rem;">
             This page is maintained by me and may not be up to date if a new update comes out.
         </p>
-        <p style="font-size: 0.8rem; color: var(--text-color);">
+        <p style="font-size: 0.8rem;">
             Last updated: November 12, 2024
         </p>
     </footer>
+    <script src="blacksmithingScript.js"></script>
 </body>
 </html>

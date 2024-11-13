@@ -1,0 +1,3587 @@
+[
+    {
+        "Item Name": "Trout Oil",
+        "Smithing Requirements": [
+            {"Material": "Raw Trout", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Iron Ingot",
+        "Smithing Requirements": [
+            {"Material": "Iron Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Copper Ingot",
+        "Smithing Requirements": [
+            {"Material": "Copper Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Master Steel Sword",
+        "Smithing Requirements": [
+            {"Material": "Boar Hide", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 10},
+            {"Material": "Copper Ingot", "Quantity": 10}
+        ]
+    },
+    {
+        "Item Name": "Malachite Blade",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 20},
+            {"Material": "Lord Slugs Slime", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Noble Rapier",
+        "Smithing Requirements": [
+            {"Material": "Boar Hide", "Quantity": 15},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Iron Ingot", "Quantity": 20},
+            {"Material": "Copper Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Master Steel Dagger",
+        "Smithing Requirements": [
+            {"Material": "Boar Hide", "Quantity": 15},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Iron Ingot", "Quantity": 20},
+            {"Material": "Copper Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Master Shield Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 4},
+            {"Material": "Wolf Hide", "Quantity": 3},
+            {"Material": "Iron Ingot", "Quantity": 5},
+            {"Material": "Master Shield", "Quantity": 1},
+            {"Material": "Boar Hide", "Quantity": 2},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Master Steel Sword Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 5},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 5},
+            {"Material": "Master Steel Sword", "Quantity": 1},
+            {"Material": "Wolf Hide", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Master Steel Greatsword Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 5},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 5},
+            {"Material": "Master Steel Greatsword", "Quantity": 1},
+            {"Material": "Wolf Hide", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Noble Rapier Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 10},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 10},
+            {"Material": "Noble Rapier", "Quantity": 1},
+            {"Material": "Wolf Hide", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Master Steel Dagger Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 5},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 5},
+            {"Material": "Master Steel Dagger", "Quantity": 1},
+            {"Material": "Wolf Hide", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Corruption Buster",
+        "Smithing Requirements": [
+            {"Material": "Iron Greatsword", "Quantity": 1},
+            {"Material": "Copper Ingot", "Quantity": 2},
+            {"Material": "Corruption Slicer", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Corruption Stinger",
+        "Smithing Requirements": [
+            {"Material": "Iron Rapier", "Quantity": 1},
+            {"Material": "Copper Ingot", "Quantity": 2},
+            {"Material": "Corruption Slicer", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Corruption Carver",
+        "Smithing Requirements": [
+            {"Material": "Iron Dagger", "Quantity": 1},
+            {"Material": "Copper Ingot", "Quantity": 2},
+            {"Material": "Corruption Slicer", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Enhanced Cloak",
+        "Smithing Requirements": [
+            {"Material": "Boar Hide", "Quantity": 6},
+            {"Material": "Beginners Cloak", "Quantity": 1},
+            {"Material": "Copper Ingots", "Quantity": 4},
+            {"Material": "Wolf Hide", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Enhanced Coned Helmet",
+        "Smithing Requirements": [
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Coned Helmet", "Quantity": 1},
+            {"Material": "Copper Ingots", "Quantity": 5},
+            {"Material": "Wolf Hide", "Quantity": 2},
+            {"Material": "Iron Ingots", "Quantity": 6}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Shield Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 6},
+            {"Material": "Wolf Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 7},
+            {"Material": "GrandMaster Shield", "Quantity": 1},
+            {"Material": "Boar Hide", "Quantity": 2},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Blade Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 6},
+            {"Material": "Boar Hide", "Quantity": 3},
+            {"Material": "Iron Ingot", "Quantity": 6},
+            {"Material": "GrandMaster Steel Blade", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Greatsword Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 6},
+            {"Material": "Boar Hide", "Quantity": 3},
+            {"Material": "Iron Ingot", "Quantity": 7},
+            {"Material": "GrandMaster Steel Greatsword", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Rapier Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 6},
+            {"Material": "Boar Hide", "Quantity": 3},
+            {"Material": "Iron Ingot", "Quantity": 6},
+            {"Material": "GrandMaster Steel Rapier", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Dagger Mk II",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 5},
+            {"Material": "Boar Hide", "Quantity": 3},
+            {"Material": "Iron Ingot", "Quantity": 6},
+            {"Material": "GrandMaster Steel Dagger", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Combat Armor Mk II (All Colors)",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 10},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Iron Ingot", "Quantity": 15},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Colored Combat Armor", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Shield Mk III",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 8},
+            {"Material": "GrandMaster Shield Mk II", "Quantity": 1},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Blade Mk III",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 8},
+            {"Material": "GrandMaster Steel Blade Mk II", "Quantity": 1},
+            {"Material": "Boar Hide", "Quantity": 4},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Greatsword Mk III",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 8},
+            {"Material": "GrandMaster Steel Greatsword Mk II", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Rapier Mk III",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 8},
+            {"Material": "GrandMaster Steel Rapier Mk II", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "GrandMaster Steel Dagger Mk III",
+        "Smithing Requirements": [
+            {"Material": "Copper Ingot", "Quantity": 8},
+            {"Material": "Wolf Hide", "Quantity": 6},
+            {"Material": "Iron Ingot", "Quantity": 8},
+            {"Material": "GrandMaster Steel Dagger Mk II", "Quantity": 1},
+            {"Material": "Illfangs Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Malachite Ingot",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Corundum Ingot",
+        "Smithing Requirements": [
+            {"Material": "Corundum Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Malachite Blade",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 20},
+            {"Material": "Lord Slugs Slime", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Malachite Greatsword",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 20},
+            {"Material": "Lord Slugs Slime", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Malachite Rapier",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 20},
+            {"Material": "Lord Slugs Slime", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Malachite Dagger",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 20},
+            {"Material": "Lord Slugs Slime", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Malachite Shield",
+        "Smithing Requirements": [
+            {"Material": "Malachite Ingot", "Quantity": 15},
+            {"Material": "Wolf Hide", "Quantity": 8},
+            {"Material": "Corundum Ingot", "Quantity": 15}
+        ]
+    },
+    {
+        "Item Name": "Gold Ingot",
+        "Smithing Requirements": [
+            {"Material": "Gold Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Sandstorm Blade",
+        "Smithing Requirements": [
+            {"Material": "Gold Ingot", "Quantity": 20},
+            {"Material": "Malachite Ingot", "Quantity": 15},
+            {"Material": "Corundum Ingot", "Quantity": 15},
+            {"Material": "Stallords Eye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Sandstone Buster",
+        "Smithing Requirements": [
+            {"Material": "Gold Ingot", "Quantity": 20},
+            {"Material": "Malachite Ingot", "Quantity": 15},
+            {"Material": "Corundum Ingot", "Quantity": 15},
+            {"Material": "Stallords Eye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Sandstorm Rapier",
+        "Smithing Requirements": [
+            {"Material": "Gold Ingot", "Quantity": 20},
+            {"Material": "Malachite Ingot", "Quantity": 15},
+            {"Material": "Corundum Ingot", "Quantity": 15},
+            {"Material": "Stallords Eye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Sandstorm Dagger",
+        "Smithing Requirements": [
+            {"Material": "Gold Ingot", "Quantity": 20},
+            {"Material": "Malachite Ingot", "Quantity": 15},
+            {"Material": "Corundum Ingot", "Quantity": 15},
+            {"Material": "Stallords Eye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blackwyrm Coat 3D Overlay",
+        "Smithing Requirements": [
+            {"Material": "Coat of Midnight", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1},
+            {"Material": "Bourne Ore", "Quantity": 5},
+            {"Material": "Corundum Ingot", "Quantity": 2},
+            {"Material": "Boar Hide", "Quantity": 10},
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Bought the Black Swordsman Gamepass", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Bourne Ingot",
+        "Smithing Requirements": [
+            {"Material": "Bourne Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Silver Ingot",
+        "Smithing Requirements": [
+            {"Material": "Silver Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Permafrost Shield",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 15},
+            {"Material": "Bourne Ingot", "Quantity": 15}
+        ]
+    },
+    {
+        "Item Name": "Permafrost Sword",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 20},
+            {"Material": "Bourne Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Permafrost Greatsword",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 20},
+            {"Material": "Bourne Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Permafrost Rapier",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 20},
+            {"Material": "Bourne Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Permafrost Dagger",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 20},
+            {"Material": "Bourne Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Dark Repulser",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 1},
+            {"Material": "Silver Ingot", "Quantity": 20},
+            {"Material": "Bourne Ingot", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Demonite Ingot",
+        "Smithing Requirements": [
+            {"Material": "Demonite", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Demonic Blade",
+        "Smithing Requirements": [
+            {"Material": "Demonite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 20},
+            {"Material": "Uakmaroths Horn", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Demonic Greatsword",
+        "Smithing Requirements": [
+            {"Material": "Demonite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 20},
+            {"Material": "Uakmaroths Horn", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Demonic Rapier",
+        "Smithing Requirements": [
+            {"Material": "Demonite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 20},
+            {"Material": "Uakmaroths Horn", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Demonic Dagger",
+        "Smithing Requirements": [
+            {"Material": "Demonite Ingot", "Quantity": 20},
+            {"Material": "Wolf Hide", "Quantity": 20},
+            {"Material": "Uakmaroths Horn", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mossy Ingot",
+        "Smithing Requirements": [
+            {"Material": "Mossy Stone", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Holy Silver Ingot",
+        "Smithing Requirements": [
+            {"Material": "Silver Ingot", "Quantity": 2},
+            {"Material": "Angels Dust", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Ancient Mask",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 20},
+            {"Material": "Holy Silver Ingot", "Quantity": 15},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ancient Warrior",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 20},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ancient Berserker",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 20},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ancient Maiden",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 20},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ancient Assassin",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 20},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Dark Repulser Mk II",
+        "Smithing Requirements": [
+            {"Material": "Plasma Extract", "Quantity": 1},
+            {"Material": "Holy Silver Ingot", "Quantity": 20},
+            {"Material": "Demonite Ingot", "Quantity": 20},
+            {"Material": "Dark Repulser", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ancient Guardian",
+        "Smithing Requirements": [
+            {"Material": "Mossy Ingot", "Quantity": 20},
+            {"Material": "Holy Silver Ingot", "Quantity": 15},
+            {"Material": "Plasma Extract", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ebony Ingot",
+        "Smithing Requirements": [
+            {"Material": "Ebony Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Reinforced Bone",
+        "Smithing Requirements": [
+            {"Material": "Bone Meal", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Corroded Crusader",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Bone", "Quantity": 45},
+            {"Material": "Ebony Ingot", "Quantity": 20},
+            {"Material": "Petrified Skull", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Corroded Berserker",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Bone", "Quantity": 45},
+            {"Material": "Ebony Ingot", "Quantity": 20},
+            {"Material": "Petrified Skull", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Corroded Piercer",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Bone", "Quantity": 45},
+            {"Material": "Ebony Ingot", "Quantity": 20},
+            {"Material": "Petrified Skull", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Corroded Shank",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Bone", "Quantity": 45},
+            {"Material": "Ebony Ingot", "Quantity": 20},
+            {"Material": "Petrified Skull", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Reinforced Coral",
+        "Smithing Requirements": [
+            {"Material": "Coral", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Poseidons Repulser",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 25},
+            {"Material": "Sea Jewel", "Quantity": 25},
+            {"Material": "Scale", "Quantity": 5},
+            {"Material": "Krakens Beak", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Atlantic Destroyer",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 25},
+            {"Material": "Sea Jewel", "Quantity": 25},
+            {"Material": "Scale", "Quantity": 5},
+            {"Material": "Krakens Beak", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Atlantic Enguarde",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 25},
+            {"Material": "Sea Jewel", "Quantity": 25},
+            {"Material": "Scale", "Quantity": 5},
+            {"Material": "Krakens Beak", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Apocalyptic Bringer",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 25},
+            {"Material": "Sea Jewel", "Quantity": 25},
+            {"Material": "Scale", "Quantity": 5},
+            {"Material": "Krakens Beak", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Dark Repulser Mk III",
+        "Smithing Requirements": [
+            {"Material": "Krakens Beak", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 20},
+            {"Material": "Reinforced Coral", "Quantity": 20},
+            {"Material": "Dark Repulser Mk II", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Refined Gem",
+        "Smithing Requirements": [
+            {"Material": "Gem Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Moons Light",
+        "Smithing Requirements": [
+            {"Material": "Xrphans Feather", "Quantity": 5},
+            {"Material": "Refined Gem", "Quantity": 15}
+        ]
+    },
+    {
+        "Item Name": "Slayers Brew",
+        "Smithing Requirements": [
+            {"Material": "Illfangs Tooth", "Quantity": 1},
+            {"Material": "Lord Slugs Slime", "Quantity": 1},
+            {"Material": "Stallords Eye", "Quantity": 1},
+            {"Material": "Uakmaroths Horn", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blessed Pendant of Light",
+        "Smithing Requirements": [
+            {"Material": "Moons Light", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 15},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Forest Warrior",
+        "Smithing Requirements": [
+            {"Material": "Moons Light", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 5},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Forest Buster",
+        "Smithing Requirements": [
+            {"Material": "Moons Light", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 5},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Forest Maiden",
+        "Smithing Requirements": [
+            {"Material": "Moons Light", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 5},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Forest Assassin",
+        "Smithing Requirements": [
+            {"Material": "Moons Light", "Quantity": 1},
+            {"Material": "Refined Gem", "Quantity": 5},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harrowed Ingot",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Impartial Edge",
+        "Smithing Requirements": [
+            {"Material": "Corruption Tendrils", "Quantity": 20},
+            {"Material": "Harrowed Ingot", "Quantity": 20},
+            {"Material": "Kings Crown", "Quantity": 1},
+            {"Material": "Impurity", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Zweihander",
+        "Smithing Requirements": [
+            {"Material": "Corruption Tendrils", "Quantity": 20},
+            {"Material": "Harrowed Ingot", "Quantity": 20},
+            {"Material": "Kings Crown", "Quantity": 1},
+            {"Material": "Impurity", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Royal Guard Rapier",
+        "Smithing Requirements": [
+            {"Material": "Corruption Tendrils", "Quantity": 20},
+            {"Material": "Harrowed Ingot", "Quantity": 20},
+            {"Material": "Kings Crown", "Quantity": 1},
+            {"Material": "Impurity", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Thiefs Blade",
+        "Smithing Requirements": [
+            {"Material": "Corruption Tendrils", "Quantity": 20},
+            {"Material": "Harrowed Ingot", "Quantity": 20},
+            {"Material": "Kings Crown", "Quantity": 1},
+            {"Material": "Impurity", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Plant Matter Ingot",
+        "Smithing Requirements": [
+            {"Material": "Plant Matter", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Dark Repulser Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ingot", "Quantity": 20},
+            {"Material": "Plant Matter Ingot", "Quantity": 20},
+            {"Material": "Kings Crown", "Quantity": 1},
+            {"Material": "Impurity", "Quantity": 1},
+            {"Material": "Queens Vine", "Quantity": 1},
+            {"Material": "Oak Wood", "Quantity": 1},
+            {"Material": "Dark Repulser Mk III", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Floral Rapier",
+        "Smithing Requirements": [
+            {"Material": "Plant Matter Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 10},
+            {"Material": "Refined Gem", "Quantity": 20},
+            {"Material": "Queens Vine", "Quantity": 1},
+            {"Material": "Oak Wood", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Floral Blade",
+        "Smithing Requirements": [
+            {"Material": "Plant Matter Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 10},
+            {"Material": "Refined Gem", "Quantity": 20},
+            {"Material": "Queens Vine", "Quantity": 1},
+            {"Material": "Oak Wood", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Floral Dagger",
+        "Smithing Requirements": [
+            {"Material": "Plant Matter Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 10},
+            {"Material": "Refined Gem", "Quantity": 20},
+            {"Material": "Queens Vine", "Quantity": 1},
+            {"Material": "Oak Wood", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Floral Buster",
+        "Smithing Requirements": [
+            {"Material": "Plant Matter Ingot", "Quantity": 25},
+            {"Material": "Holy Silver Ingot", "Quantity": 10},
+            {"Material": "Refined Gem", "Quantity": 20},
+            {"Material": "Queens Vine", "Quantity": 1},
+            {"Material": "Oak Wood", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Slayers Essence",
+        "Smithing Requirements": [
+            {"Material": "Plasma Extract", "Quantity": 1},
+            {"Material": "Petrified Skull", "Quantity": 1},
+            {"Material": "Krakens Beak", "Quantity": 1},
+            {"Material": "Monks Sash", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Flora",
+        "Smithing Requirements": [
+            {"Material": "Queens Vine", "Quantity": 4},
+            {"Material": "Plant Matter Ingot", "Quantity": 15},
+            {"Material": "Slayers Essence", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Poseidons Scale",
+        "Smithing Requirements": [
+            {"Material": "Scale", "Quantity": 15},
+            {"Material": "Reinforced Coral", "Quantity": 25},
+            {"Material": "Sea Jewel", "Quantity": 25},
+            {"Material": "Krakens Beak", "Quantity": 5},
+            {"Material": "Queens Vine", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Twilight Buster",
+        "Smithing Requirements": [
+            {"Material": "Ebony Ingot", "Quantity": 25},
+            {"Material": "Refined Gem", "Quantity": 15},
+            {"Material": "Kings Crown", "Quantity": 3},
+            {"Material": "Impurity", "Quantity": 1},
+            {"Material": "Moons Light", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Hells Slayer",
+        "Smithing Requirements": [
+            {"Material": "Demonite Ingot", "Quantity": 30},
+            {"Material": "Reinforced Bone", "Quantity": 20},
+            {"Material": "Uakmaroths Horn", "Quantity": 2},
+            {"Material": "Petrified Skull", "Quantity": 2},
+            {"Material": "Slayers Brew", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Anguish Carver",
+        "Smithing Requirements": [
+            {"Material": "Holy Silver Ingot", "Quantity": 15},
+            {"Material": "Bourne Ingot", "Quantity": 30},
+            {"Material": "Illfangs Tooth", "Quantity": 1},
+            {"Material": "Stallords Eye", "Quantity": 1},
+            {"Material": "Monks Sash", "Quantity": 1},
+            {"Material": "Moons Light", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Dark Energy",
+        "Smithing Requirements": [
+            {"Material": "Dark Matter", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Dark Source",
+        "Smithing Requirements": [
+            {"Material": "Dark Energy", "Quantity": 10}
+        ]
+    },
+    {
+        "Item Name": "Blessed Greatsword",
+        "Smithing Requirements": [
+            {"Material": "Iron Greatsword", "Quantity": 1},
+            {"Material": "Dark Energy", "Quantity": 1},
+            {"Material": "Blessed Blade", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blessed Blade",
+        "Smithing Requirements": [
+            {"Material": "Blessed Pendant of Light", "Quantity": 1},
+            {"Material": "Plant Matter Ingot", "Quantity": 10},
+            {"Material": "Dark Energy", "Quantity": 1},
+            {"Material": "Dark Source", "Quantity": 1},
+            {"Material": "Akikos Will", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blessed Rapier",
+        "Smithing Requirements": [
+            {"Material": "Iron Rapier", "Quantity": 1},
+            {"Material": "Dark Energy", "Quantity": 1},
+            {"Material": "Blessed Blade", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blessed Dagger",
+        "Smithing Requirements": [
+            {"Material": "Iron Dagger", "Quantity": 1},
+            {"Material": "Dark Energy", "Quantity": 1},
+            {"Material": "Blessed Blade", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Heavenly Ingot",
+        "Smithing Requirements": [
+            {"Material": "Heavenly Ore", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Village Key",
+        "Smithing Requirements": [
+            {"Material": "First Key Piece", "Quantity": 1},
+            {"Material": "Second Key Piece", "Quantity": 1},
+            {"Material": "Third Key Piece", "Quantity": 1},
+            {"Material": "Have Quests: 71, 72 & 73 Completed", "Quantity": 1},
+            {"Material": "Have Quest K15 Active", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Alloy Smithing Plate",
+        "Smithing Requirements": [
+            {"Material": "Iron Ingot", "Quantity": 10},
+            {"Material": "Copper Ingot", "Quantity": 10},
+            {"Material": "Malachite Ingot", "Quantity": 10},
+            {"Material": "Corundum Ingot", "Quantity": 10},
+            {"Material": "Gold Ingot", "Quantity": 10},
+            {"Material": "Silver Ingot", "Quantity": 10},
+            {"Material": "Have Quest C71 Active", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Crystaline Smithing Plate",
+        "Smithing Requirements": [
+            {"Material": "Scale", "Quantity": 10},
+            {"Material": "Sea Jewel", "Quantity": 10},
+            {"Material": "Refined Gem", "Quantity": 15},
+            {"Material": "Harrowed Ingot", "Quantity": 10},
+            {"Material": "Impurity", "Quantity": 1},
+            {"Material": "Have Quest C71 Complete", "Quantity": 1},
+            {"Material": "Have Quest C72 Active", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Angelic Smithing Plate",
+        "Smithing Requirements": [
+            {"Material": "Holy Silver Ingot", "Quantity": 10},
+            {"Material": "Dark Source", "Quantity": 5},
+            {"Material": "Soul", "Quantity": 1},
+            {"Material": "Heavenly Ingot", "Quantity": 10},
+            {"Material": "Poisonous Cleaver", "Quantity": 1},
+            {"Material": "Have Quest: C71 & C72 Complete", "Quantity": 1},
+            {"Material": "Have Quest C73 Active", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Gigas Spirit",
+        "Smithing Requirements": [
+            {"Material": "Alloy Smithing Plate", "Quantity": 1},
+            {"Material": "Crystaline Smithing Plate", "Quantity": 1},
+            {"Material": "Angelic Smithing Plate", "Quantity": 1},
+            {"Material": "Gigas Blessed Branch", "Quantity": 1},
+            {"Material": "Quests : C71, C72 & C73 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Gigas Soul",
+        "Smithing Requirements": [
+            {"Material": "Alloy Smithing Plate", "Quantity": 1},
+            {"Material": "Crystaline Smithing Plate", "Quantity": 1},
+            {"Material": "Angelic Smithing Plate", "Quantity": 1},
+            {"Material": "Gigas Blessed Branch", "Quantity": 1},
+            {"Material": "Quests : C71, C72 & C73 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Gigas Lacerator",
+        "Smithing Requirements": [
+            {"Material": "Alloy Smithing Plate", "Quantity": 1},
+            {"Material": "Crystaline Smithing Plate", "Quantity": 1},
+            {"Material": "Angelic Smithing Plate", "Quantity": 1},
+            {"Material": "Gigas Blessed Branch", "Quantity": 1},
+            {"Material": "Quests : C71, C72 & C73 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Gigas Grinder",
+        "Smithing Requirements": [
+            {"Material": "Alloy Smithing Plate", "Quantity": 1},
+            {"Material": "Crystaline Smithing Plate", "Quantity": 1},
+            {"Material": "Angelic Smithing Plate", "Quantity": 1},
+            {"Material": "Gigas Blessed Branch", "Quantity": 1},
+            {"Material": "Quests : C71, C72 & C73 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Candy Ingot",
+        "Smithing Requirements": [
+            {"Material": "Rock Candy", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Candy Bar",
+        "Smithing Requirements": [
+            {"Material": "Sweet Candy", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Pure Candy",
+        "Smithing Requirements": [
+            {"Material": "Candy Ingot", "Quantity": 1},
+            {"Material": "Candy Bar", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Necromancer Brew",
+        "Smithing Requirements": [
+            {"Material": "Soul", "Quantity": 1},
+            {"Material": "Heavenly Ingot", "Quantity": 5},
+            {"Material": "Giant Chains", "Quantity": 1},
+            {"Material": "Captains Tooth", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Butterscotch Blade",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Heavenly Ingot", "Quantity": 5},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Das Chaos", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Cinnamon Sword",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Heavenly Ingot", "Quantity": 5},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Der Zerstorer", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Licorice Lancer",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Heavenly Ingot", "Quantity": 5},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Die Klarheit", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Sour Lemon Stabber",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Heavenly Ingot", "Quantity": 5},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Die Vergangenheit", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Wafer Shield",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Heavenly Ingot", "Quantity": 3},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Divine Guard", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Candy Mask",
+        "Smithing Requirements": [
+            {"Material": "Pure Candy", "Quantity": 25},
+            {"Material": "Necromancer Brew", "Quantity": 1},
+            {"Material": "Graciousness", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Water Elemental Handle",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ingots", "Quantity": 20},
+            {"Material": "Plant Matter Ingots", "Quantity": 20},
+            {"Material": "Heavenly Ingots", "Quantity": 15},
+            {"Material": "Kings Crowns", "Quantity": 5},
+            {"Material": "Queens Vines", "Quantity": 5},
+            {"Material": "Souls", "Quantity": 5},
+            {"Material": "Impurities", "Quantity": 2},
+            {"Material": "Oak Wood", "Quantity": 2},
+            {"Material": "Slayers Brew", "Quantity": 1},
+            {"Material": "Slayers Essence", "Quantity": 1},
+            {"Material": "Dark Sources", "Quantity": 5},
+            {"Material": "Legendary Cinders", "Quantity": 1},
+            {"Material": "Doomed Treasures", "Quantity": 2},
+            {"Material": "Purifications", "Quantity": 2},
+            {"Material": "Xantherils", "Quantity": 2},
+            {"Material": "Whales", "Quantity": 2},
+            {"Material": "Floral Blade", "Quantity": 1},
+            {"Material": "Blessed Blade", "Quantity": 1},
+            {"Material": "Hope Blades", "Quantity": 2},
+            {"Material": "Holy Blades", "Quantity": 2},
+            {"Material": "Das Chaos", "Quantity": 2},
+            {"Material": "Requires The First Threat (C#70) Completed", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Fire Elemental Handle",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ingots", "Quantity": 20},
+            {"Material": "Plant Matter Ingots", "Quantity": 20},
+            {"Material": "Heavenly Ingots", "Quantity": 15},
+            {"Material": "Kings Crowns", "Quantity": 5},
+            {"Material": "Queens Vines", "Quantity": 5},
+            {"Material": "Souls", "Quantity": 5},
+            {"Material": "Impurities", "Quantity": 2},
+            {"Material": "Oak Wood", "Quantity": 2},
+            {"Material": "Slayers Brew", "Quantity": 1},
+            {"Material": "Slayers Essence", "Quantity": 1},
+            {"Material": "Dark Sources", "Quantity": 5},
+            {"Material": "Legendary Cinders", "Quantity": 1},
+            {"Material": "Doomed Treasures", "Quantity": 2},
+            {"Material": "Purifications", "Quantity": 2},
+            {"Material": "Xantherils", "Quantity": 2},
+            {"Material": "Whales", "Quantity": 2},
+            {"Material": "Floral Buster", "Quantity": 1},
+            {"Material": "Blessed Greatsword", "Quantity": 1},
+            {"Material": "Hope Busters", "Quantity": 2},
+            {"Material": "Holy Busters", "Quantity": 2},
+            {"Material": "Der Zerstorers", "Quantity": 2},
+            {"Material": "Requires The First Threat (C#70) Completed", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Air Elemental Handle",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ingots", "Quantity": 20},
+            {"Material": "Plant Matter Ingots", "Quantity": 20},
+            {"Material": "Heavenly Ingots", "Quantity": 15},
+            {"Material": "Kings Crowns", "Quantity": 5},
+            {"Material": "Queens Vines", "Quantity": 5},
+            {"Material": "Souls", "Quantity": 5},
+            {"Material": "Impurities", "Quantity": 2},
+            {"Material": "Oak Wood", "Quantity": 2},
+            {"Material": "Slayers Brew", "Quantity": 1},
+            {"Material": "Slayers Essence", "Quantity": 1},
+            {"Material": "Dark Sources", "Quantity": 5},
+            {"Material": "Legendary Cinders", "Quantity": 1},
+            {"Material": "Doomed Treasures", "Quantity": 2},
+            {"Material": "Purifications", "Quantity": 2},
+            {"Material": "Xantherils", "Quantity": 2},
+            {"Material": "Whales", "Quantity": 2},
+            {"Material": "Floral Rapier", "Quantity": 1},
+            {"Material": "Blessed Rapier", "Quantity": 1},
+            {"Material": "Hope Rapiers", "Quantity": 2},
+            {"Material": "Holy Rapiers", "Quantity": 2},
+            {"Material": "Die Klarheits", "Quantity": 2},
+            {"Material": "Requires The First Threat (C#70) Completed", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Earth Elemental Handle",
+        "Smithing Requirements": [
+            {"Material": "Harrowed Ingots", "Quantity": 20},
+            {"Material": "Plant Matter Ingots", "Quantity": 20},
+            {"Material": "Heavenly Ingots", "Quantity": 15},
+            {"Material": "Kings Crowns", "Quantity": 5},
+            {"Material": "Queens Vines", "Quantity": 5},
+            {"Material": "Souls", "Quantity": 5},
+            {"Material": "Impurities", "Quantity": 2},
+            {"Material": "Oak Wood", "Quantity": 2},
+            {"Material": "Slayers Brew", "Quantity": 1},
+            {"Material": "Slayers Essence", "Quantity": 1},
+            {"Material": "Dark Sources", "Quantity": 5},
+            {"Material": "Legendary Cinders", "Quantity": 1},
+            {"Material": "Doomed Treasures", "Quantity": 2},
+            {"Material": "Purifications", "Quantity": 2},
+            {"Material": "Xantherils", "Quantity": 2},
+            {"Material": "Whales", "Quantity": 2},
+            {"Material": "Floral Dagger", "Quantity": 1},
+            {"Material": "Blessed Dagger", "Quantity": 1},
+            {"Material": "Hope Daggers", "Quantity": 2},
+            {"Material": "Holy Light Daggers", "Quantity": 2},
+            {"Material": "Die Vergangenheits", "Quantity": 2},
+            {"Material": "Requires The First Threat (C#70) Completed", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Divinity",
+        "Smithing Requirements": [
+            {"Material": "Slayers Brew", "Quantity": 8},
+            {"Material": "Slayers Essence", "Quantity": 8},
+            {"Material": "Obsidibite", "Quantity": 6},
+            {"Material": "Moons Light", "Quantity": 2},
+            {"Material": "Yang Katana", "Quantity": 2},
+            {"Material": "Poseidons Trident", "Quantity": 2},
+            {"Material": "The Green Flame Sword", "Quantity": 1},
+            {"Material": "Sandstorm Blade", "Quantity": 1},
+            {"Material": "Sea Jewel", "Quantity": 40},
+            {"Material": "Reinforced Bone", "Quantity": 30},
+            {"Material": "Corundum Ingot", "Quantity": 40},
+            {"Material": "Gold Ingot", "Quantity": 40},
+            {"Material": "Holy Silver Ingot", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Zurandal",
+        "Smithing Requirements": [
+            {"Material": "Slayers Brew", "Quantity": 8},
+            {"Material": "Slayers Essence", "Quantity": 8},
+            {"Material": "Obsidibite", "Quantity": 6},
+            {"Material": "Moons Light", "Quantity": 2},
+            {"Material": "Legendary Malachite Blade", "Quantity": 2},
+            {"Material": "Yukkis Mourne", "Quantity": 2},
+            {"Material": "Kamikaze Katana", "Quantity": 3},
+            {"Material": "Wretched Greatsword", "Quantity": 3},
+            {"Material": "Atlantic Destroyer", "Quantity": 1},
+            {"Material": "Reinforced Coral", "Quantity": 30},
+            {"Material": "Copper Ingot", "Quantity": 40},
+            {"Material": "Ebony Ingot", "Quantity": 40},
+            {"Material": "Refined Gem", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Queens Maiden",
+        "Smithing Requirements": [
+            {"Material": "Slayers Brew", "Quantity": 8},
+            {"Material": "Slayers Essence", "Quantity": 8},
+            {"Material": "Obsidibite", "Quantity": 6},
+            {"Material": "Moons Light", "Quantity": 2},
+            {"Material": "Titans Guard", "Quantity": 2},
+            {"Material": "Krakens Skin", "Quantity": 2},
+            {"Material": "Deaths Kiss", "Quantity": 3},
+            {"Material": "Desert Striker", "Quantity": 3},
+            {"Material": "Ancient Maiden", "Quantity": 1},
+            {"Material": "Mossy Ingot", "Quantity": 30},
+            {"Material": "Scale", "Quantity": 40},
+            {"Material": "Iron Ingot", "Quantity": 40},
+            {"Material": "Silver Ingot", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Katherines Dagger",
+        "Smithing Requirements": [
+            {"Material": "Slayers Brew", "Quantity": 8},
+            {"Material": "Slayers Essence", "Quantity": 8},
+            {"Material": "Obsidibite", "Quantity": 6},
+            {"Material": "Moons Light", "Quantity": 2},
+            {"Material": "Illfangs Shield", "Quantity": 2},
+            {"Material": "Pharaoh's Edge", "Quantity": 2},
+            {"Material": "Tourmaline Edge", "Quantity": 3},
+            {"Material": "Molten Thief", "Quantity": 3},
+            {"Material": "Apocalyptic Bringer", "Quantity": 1},
+            {"Material": "Bourne Ingot", "Quantity": 30},
+            {"Material": "Demonite Ingot", "Quantity": 40},
+            {"Material": "Gold Ingot", "Quantity": 40},
+            {"Material": "Silver Ingot", "Quantity": 40}
+        ]
+    },
+    {
+        "Item Name": "Jar of Hearts",
+        "Smithing Requirements": [
+            {"Material": "Essence of Valentine", "Quantity": 1},
+            {"Material": "Pneuma Flower", "Quantity": 1},
+            {"Material": "Broken Jar of Broken Hearts", "Quantity": 1},
+            {"Material": "Have QE06, QE07, QE08, QE08-2 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Valentines Winged Bear",
+        "Smithing Requirements": [
+            {"Material": "Valentines Bear", "Quantity": 1},
+            {"Material": "Cupids Wings", "Quantity": 1},
+            {"Material": "Chocolate", "Quantity": 50},
+            {"Material": "Chocolate Heart", "Quantity": 5},
+            {"Material": "Have QE06, QE07, QE08, QE08-2 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winged Jar of Hearts",
+        "Smithing Requirements": [
+            {"Material": "Jar of Hearts", "Quantity": 1},
+            {"Material": "Cupids Wings", "Quantity": 1},
+            {"Material": "Chocolate", "Quantity": 50},
+            {"Material": "Chocolate Heart", "Quantity": 5},
+            {"Material": "Have QE06, QE07, QE08, QE08-2 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "St Patty's Pot of Gold Rainbow",
+        "Smithing Requirements": [
+            {"Material": "St Patty's Pot of Gold", "Quantity": 1},
+            {"Material": "St Patty's Rainbow", "Quantity": 1},
+            {"Material": "Four-Leaf Clover", "Quantity": 25},
+            {"Material": "Have Event Quests 10 and 11 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Refined Egg",
+        "Smithing Requirements": [
+            {"Material": "Easter Egg", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Pelt Armor MK II",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Pelt Armor", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Easter Bobbers",
+        "Smithing Requirements": [
+            {"Material": "Brown Bunny Ears", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Refined Egg", "Quantity": 25},
+            {"Material": "Easter Egg", "Quantity": 120}
+        ]
+    },
+    {
+        "Item Name": "Easter Pendant",
+        "Smithing Requirements": [
+            {"Material": "Bunny Tail", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Refined Egg", "Quantity": 25},
+            {"Material": "Easter Egg", "Quantity": 120}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Pelt Overlay (All Colors)",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Pelt Pink Overlay", "Quantity": 1},
+            {"Material": "Color Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Bunny Tail (All Colors)",
+        "Smithing Requirements": [
+            {"Material": "Bunny Tail", "Quantity": 1},
+            {"Material": "Color Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Bunny Ears (All Colors)",
+        "Smithing Requirements": [
+            {"Material": "White Bunny Ears", "Quantity": 1},
+            {"Material": "Color Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Easter Island Shield Mk II",
+        "Smithing Requirements": [
+            {"Material": "Refined Egg", "Quantity": 20},
+            {"Material": "Easter Island Shield", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Golden Egg", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Trinity Longsword MII",
+        "Smithing Requirements": [
+            {"Material": "Trinity Longsword", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Eostre Claymore MII",
+        "Smithing Requirements": [
+            {"Material": "Eostre Claymore", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Blessed Lance MII",
+        "Smithing Requirements": [
+            {"Material": "Blessed Lance", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Holy Dagger MII",
+        "Smithing Requirements": [
+            {"Material": "Holy Dagger", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Easter Egg", "Quantity": 100},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Trinity Longsword MIII",
+        "Smithing Requirements": [
+            {"Material": "Trinity Longsword MII", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Eostre Claymore MIII",
+        "Smithing Requirements": [
+            {"Material": "Eostre Claymore MII", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Blessed Lance MIII",
+        "Smithing Requirements": [
+            {"Material": "Blessed Lance MII", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Holy Dagger MIII",
+        "Smithing Requirements": [
+            {"Material": "Holy Dagger MII", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 25}
+        ]
+    },
+    {
+        "Item Name": "Eggceptional Katana Mk II",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Eggceptional Katana", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 90},
+            {"Material": "Refined Egg", "Quantity": 16}
+        ]
+    },
+    {
+        "Item Name": "Eggsecution Claymore Mk II",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Eggsecution Claymore", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 90},
+            {"Material": "Refined Egg", "Quantity": 16}
+        ]
+    },
+    {
+        "Item Name": "Eggcelerate Épée Mk II",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Eggcelerate Épée", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 90},
+            {"Material": "Refined Egg", "Quantity": 16}
+        ]
+    },
+    {
+        "Item Name": "Eggsacting Edge Mk II",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Eggsacting Edge", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 90},
+            {"Material": "Refined Egg", "Quantity": 16}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Hunters Armor (All Colors)",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Hunters Armor Token", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Refined Egg", "Quantity": 1},
+            {"Material": "List of Quests Quest Event #18", "Quantity": 1},
+            {"Material": "Blue/Yellow/Brown/Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Hunters Armor Mk II",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Hunters Armor", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 1},
+            {"Material": "Refined Egg", "Quantity": 14},
+            {"Material": "Easter Egg", "Quantity": 85},
+            {"Material": "Quest Event #18", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Eggceptional Katana Mk III",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Eggceptional Katana Mk II", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 18}
+        ]
+    },
+    {
+        "Item Name": "Eggsecution Claymore Mk III",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Eggsecution Claymore Mk II", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 18}
+        ]
+    },
+    {
+        "Item Name": "Eggcelerate Épée Mk III",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Eggcelerate Épée Mk II", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 18}
+        ]
+    },
+    {
+        "Item Name": "Eggsacting Edge Mk III",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Eggsacting Edge Mk II", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 80},
+            {"Material": "Refined Egg", "Quantity": 18}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Hunters Armor Mk III",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Hunters Armor Mk II", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 2},
+            {"Material": "Refined Egg", "Quantity": 16},
+            {"Material": "Easter Egg", "Quantity": 75},
+            {"Material": "Quest Event #18 & #19", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Eggceptional Katana Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 4},
+            {"Material": "Eggceptional Katana Mk III", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 70},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Eggsecution Claymore Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 4},
+            {"Material": "Eggsecution Claymore Mk III", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 70},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Eggcelerate Épée Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 4},
+            {"Material": "Eggcelerate Épée Mk III", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 70},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Eggsacting Edge Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 4},
+            {"Material": "Eggsacting Edge Mk III", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 70},
+            {"Material": "Refined Egg", "Quantity": 20}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Hunters Armor Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Hunters Armor Mk III", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 3},
+            {"Material": "Refined Egg", "Quantity": 18},
+            {"Material": "Easter Egg", "Quantity": 65},
+            {"Material": "Quest Event #18 & #19", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Eggceptional Katana Mk V",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Eggceptional Katana Mk IV", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 60},
+            {"Material": "Refined Egg", "Quantity": 22}
+        ]
+    },
+    {
+        "Item Name": "Eggsecution Claymore Mk V",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Eggsecution Claymore Mk IV", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 60},
+            {"Material": "Refined Egg", "Quantity": 22}
+        ]
+    },
+    {
+        "Item Name": "Eggcelerate Épée Mk V",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Eggcelerate Épée Mk IV", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 60},
+            {"Material": "Refined Egg", "Quantity": 22}
+        ]
+    },
+    {
+        "Item Name": "Eggsacting Edge Mk V",
+        "Smithing Requirements": [
+            {"Material": "Golden Egg", "Quantity": 5},
+            {"Material": "Eggsacting Edge Mk IV", "Quantity": 1},
+            {"Material": "Easter Egg", "Quantity": 60},
+            {"Material": "Refined Egg", "Quantity": 22}
+        ]
+    },
+    {
+        "Item Name": "Rabbit Hunters Armor Mk V",
+        "Smithing Requirements": [
+            {"Material": "Rabbit Hunters Armor Mk IV", "Quantity": 1},
+            {"Material": "Golden Egg", "Quantity": 4},
+            {"Material": "Refined Egg", "Quantity": 20},
+            {"Material": "Easter Egg", "Quantity": 55},
+            {"Material": "Quest Event #18 & #19 & #20", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G1 (Sword) Overlay",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I1 (GreatSword) Overlay",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E1 (Rapier) Overlay",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C1 (Dagger) Overlay",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G2 (Sword) Green",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I2 (GreatSword) Green",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E2 (Rapier) Green",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C2 (Dagger) Green",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G3 (Sword) Yellow",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Yellow", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I3 (GreatSword) Yellow",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Yellow", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E3 (Rapier) Yellow",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Yellow", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C3 (Dagger) Yellow",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Yellow", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G4 (Sword) Orange",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I4 (GreatSword) Orange",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E4 (Rapier) Orange",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C4 (Dagger) Orange",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G5 (Sword) Red",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I5 (GreatSword) Red",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E5 (Rapier) Red",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C5 (Dagger) Red",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G6 (Sword) Purple",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Purple", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I6 (GreatSword) Purple",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Purple", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E6 (Rapier) Purple",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Purple", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C6 (Dagger) Purple",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Purple", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G7 (Sword) Black",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Black", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I7 (GreatSword) Black",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Black", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E7 (Rapier) Black",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Black", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C7 (Dagger) Black",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Black", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G8 (Sword) White",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle White", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I8 (GreatSword) White",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle White", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E8 (Rapier) White",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle White", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C8 (Dagger) White",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle White", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G1 (Sword) Type L",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Leia", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I1 (GreatSword) Type L",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Leia", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E1 (Rapier) Type L",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Leia", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C1 (Dagger) Type L",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Leia", "Quantity": 1},
+            {"Material": "Photon Handle Blue", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G2 (Sword) Type S",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Luke", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I2 (GreatSword) Type S",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Luke", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E2 (Rapier) Type S",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Luke", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C2 (Dagger) Type S",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Luke", "Quantity": 1},
+            {"Material": "Photon Handle Green", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G4 (Sword) Type C",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Cere", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I4 (GreatSword) Type C",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Cere", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E4 (Rapier) Type C",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Cere", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C4 (Dagger) Type C",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Cere", "Quantity": 1},
+            {"Material": "Photon Handle Orange", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu G5 (Sword) Type V",
+        "Smithing Requirements": [
+            {"Material": "Photon Medium Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Vader", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu I5 (GreatSword) Type V",
+        "Smithing Requirements": [
+            {"Material": "Photon Heavy Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Vader", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu E5 (Rapier) Type V",
+        "Smithing Requirements": [
+            {"Material": "Photon Weightless Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Vader", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Kagemitsu C5 (Dagger) Type V",
+        "Smithing Requirements": [
+            {"Material": "Photon Light Crystal", "Quantity": 1},
+            {"Material": "Photon Handle", "Quantity": 1},
+            {"Material": "Photon Handle Vader", "Quantity": 1},
+            {"Material": "Photon Handle Red", "Quantity": 1},
+            {"Material": "Requires QE61, QE62 Quests Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Super Soaker",
+        "Smithing Requirements": [
+            {"Material": "Seashells", "Quantity": 250},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quest QE23 Completed", "Quantity": 1},
+            {"Material": "Summer Conch Chain", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Surfboard",
+        "Smithing Requirements": [
+            {"Material": "Seashells", "Quantity": 250},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quest QE23 Completed", "Quantity": 1},
+            {"Material": "Summer Conch Chain", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Beach Umbrella",
+        "Smithing Requirements": [
+            {"Material": "Seashells", "Quantity": 250},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quest QE23 Completed", "Quantity": 1},
+            {"Material": "Summer Conch Chain", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Sand Pale Shovel",
+        "Smithing Requirements": [
+            {"Material": "Seashells", "Quantity": 250},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quest QE23 Completed", "Quantity": 1},
+            {"Material": "Summer Conch Chain", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Flower Crown Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Flower", "Quantity": 4},
+            {"Material": "Summer Flower Crown Base", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Flower Crown Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Flower", "Quantity": 7},
+            {"Material": "Summer Flower Crown Mk II", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Conch Necklace Mk II",
+        "Smithing Requirements": [
+            {"Material": "Seashells", "Quantity": 200},
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quest QE23 Completed", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Conch Necklace Mk III",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 20},
+            {"Material": "Summer Conch Necklace Mk II", "Quantity": 1},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quests QE23 and QE24 Completed", "Quantity": 1},
+            {"Material": "Seashells", "Quantity": 150},
+            {"Material": "Sea Jewel", "Quantity": 30}
+        ]
+    },
+    {
+        "Item Name": "Summer Seashell Shield Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Seashell Shield", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 120},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE25 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Water Sword Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Water Sword", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE25 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Cracked Greatsword Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Cracked Greatsword", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE25 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Rain Rapier Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Rain Rapier", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE25 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Shark Tooth Dagger Mk II",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Shark Tooth Dagger", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE25 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Summer Seashell Shield Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Seashell Shield Mk II", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 120},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE26 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Summer Water Sword Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Water Sword Mk II", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE26 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Summer Cracked Greatsword Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Cracked Greatsword Mk II", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE26 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Summer Rain Rapier Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Rain Rapier Mk II", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE26 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Shark Tooth Dagger Mk III",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Shark Tooth Dagger Mk II", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE26 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 2}
+        ]
+    },
+    {
+        "Item Name": "Summer Conch Necklace Mk III",
+        "Smithing Requirements": [
+            {"Material": "Reinforced Coral", "Quantity": 20},
+            {"Material": "Summer Conch Necklace Mk II", "Quantity": 1},
+            {"Material": "Summer Conch", "Quantity": 1},
+            {"Material": "Quests QE23 and QE24 Completed", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Sea Jewel", "Quantity": 30}
+        ]
+    },
+    {
+        "Item Name": "Summer Seashell Shield Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Seashell Shield Mk III", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 120},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE27 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Summer Water Sword Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Water Sword Mk III", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE27 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Summer Cracked Greatsword Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Cracked Greatsword Mk III", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE27 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Summer Rain Rapier Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Rain Rapier Mk III", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE27 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Shark Tooth Dagger Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Shark Tooth Dagger Mk III", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE27 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "Summer Seashell Shield Mk V",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Seashell Shield Mk IV", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 120},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE28 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 4}
+        ]
+    },
+    {
+        "Item Name": "Summer Water Sword Mk V",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Water Sword Mk IV", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE28 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 4}
+        ]
+    },
+    {
+        "Item Name": "Summer Cracked Greatsword Mk V",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Cracked Greatsword Mk IV", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE28 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 4}
+        ]
+    },
+    {
+        "Item Name": "Summer Rain Rapier Mk V",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Summer Rain Rapier Mk IV", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE28 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 4}
+        ]
+    },
+    {
+        "Item Name": "Shark Tooth Dagger Mk V",
+        "Smithing Requirements": [
+            {"Material": "Summer Conch Chain", "Quantity": 1},
+            {"Material": "Shark Tooth Dagger Mk IV", "Quantity": 1},
+            {"Material": "Seashell", "Quantity": 150},
+            {"Material": "Shark Tooth", "Quantity": 1},
+            {"Material": "Quest QE28 Completed", "Quantity": 1},
+            {"Material": "Summer Ball Shield", "Quantity": 4}
+        ]
+    },
+    {
+        "Item Name": "Inferno Staff Mk II",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Inferno Staff", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Grand Inert Staff Mk II",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Grand Inert Staff", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Glacier Staff Mk II",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Glacier Staff", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Bane Wand Mk II",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Bane Wand", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Arachnophobias Shield MK II",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Arachnophobias Shield", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5}
+        ]
+    },
+    {
+        "Item Name": "Fatal Scythe",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Scorched Crucible Backsword", "Quantity": 1},
+            {"Material": "Porkyplasm", "Quantity": 5},
+            {"Material": "Grimms Scythe", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth White",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth Purple", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Purple",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Red",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Blue",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Yellow",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Green",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Orange",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Pink",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Smooth Black",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Smooth White", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled White",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled Purple", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Purple",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Red",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Blue",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Yellow",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Green",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Orange",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Pink",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Hat Crinkled Black",
+        "Smithing Requirements": [
+            {"Material": "Mage Hat Crinkled White", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth White",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth Purple", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Purple",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Red",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Blue",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Yellow",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Green",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Orange",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Pink",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Smooth Black",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Smooth White", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled White",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled Purple", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Purple",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Red",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Blue",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Yellow",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Green",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Orange",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Pink",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mage Robe Crinkled Black",
+        "Smithing Requirements": [
+            {"Material": "Mage Robe Crinkled White", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ghouls Grace",
+        "Smithing Requirements": [
+            {"Material": "Crescent One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 31 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Labrys Soul Cleaver",
+        "Smithing Requirements": [
+            {"Material": "Crescent Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Woeful Rapier",
+        "Smithing Requirements": [
+            {"Material": "Crescent Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harvest Reaver",
+        "Smithing Requirements": [
+            {"Material": "Crescent Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ghouls Grace Mk II",
+        "Smithing Requirements": [
+            {"Material": "Ghouls Grace", "Quantity": 1},
+            {"Material": "Crescent One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Labrys Soul Cleaver Mk II",
+        "Smithing Requirements": [
+            {"Material": "Labrys Soul Cleaver", "Quantity": 1},
+            {"Material": "Crescent Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Woeful Rapier Mk II",
+        "Smithing Requirements": [
+            {"Material": "Woeful Rapier", "Quantity": 1},
+            {"Material": "Crescent Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harvest Reaver Mk II",
+        "Smithing Requirements": [
+            {"Material": "Harvest Reaver", "Quantity": 1},
+            {"Material": "Crescent Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ghouls Grace Mk III",
+        "Smithing Requirements": [
+            {"Material": "Ghouls Grace Mk II", "Quantity": 1},
+            {"Material": "Crescent One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Labrys Soul Cleaver Mk III",
+        "Smithing Requirements": [
+            {"Material": "Labrys Soul Cleaver Mk II", "Quantity": 1},
+            {"Material": "Crescent Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Woeful Rapier Mk III",
+        "Smithing Requirements": [
+            {"Material": "Woeful Rapier Mk II", "Quantity": 1},
+            {"Material": "Crescent Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harvest Reaver Mk III",
+        "Smithing Requirements": [
+            {"Material": "Harvest Reaver Mk II", "Quantity": 1},
+            {"Material": "Crescent Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Demon Dark Clover Accessories",
+        "Smithing Requirements": [
+            {"Material": "Candy Corn", "Quantity": 100},
+            {"Material": "Candy", "Quantity": 20},
+            {"Material": "Have Event Quests 35, 36 and 37 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Demon Dark Clover",
+        "Smithing Requirements": [
+            {"Material": "Demon Armor Piece", "Quantity": 4},
+            {"Material": "Candy Corn", "Quantity": 200},
+            {"Material": "Candy", "Quantity": 20},
+            {"Material": "Have Event Quests 35, 36, 37 and 38 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ghouls Grace Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Ghouls Grace Mk III", "Quantity": 1},
+            {"Material": "Crescent One-Handed Token", "Quantity": 1},
+            {"Material": "Scorched Crucible Backsword", "Quantity": 1},
+            {"Material": "Inferno Crystal", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Labrys Soul Cleaver Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Labrys Soul Cleaver Mk III", "Quantity": 1},
+            {"Material": "Crescent Two-Handed Token", "Quantity": 1},
+            {"Material": "Scorched Crucible Backsword", "Quantity": 1},
+            {"Material": "Inert Crystal", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Woeful Rapier Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Woeful Rapier Mk III", "Quantity": 1},
+            {"Material": "Crescent Rapier Token", "Quantity": 1},
+            {"Material": "Scorched Crucible Backsword", "Quantity": 1},
+            {"Material": "Glacier Crystal", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harvest Reaver Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Harvest Reaver Mk III", "Quantity": 1},
+            {"Material": "Crescent Dagger Token", "Quantity": 1},
+            {"Material": "Scorched Crucible Backsword", "Quantity": 1},
+            {"Material": "Bane Crystal", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Ghouls Grace Mk V",
+        "Smithing Requirements": [
+            {"Material": "Ghouls Grace Mk IV", "Quantity": 1},
+            {"Material": "Crescent One-Handed Token", "Quantity": 1},
+            {"Material": "Friday 13th Hockey Mask", "Quantity": 1},
+            {"Material": "Machete Shard", "Quantity": 2},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34, 13 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Labrys Soul Cleaver Mk V",
+        "Smithing Requirements": [
+            {"Material": "Labrys Soul Cleaver Mk IV", "Quantity": 1},
+            {"Material": "Crescent Two-Handed Token", "Quantity": 1},
+            {"Material": "Friday 13th Hockey Mask", "Quantity": 1},
+            {"Material": "Machete Shard", "Quantity": 2},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34, 13 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Woeful Rapier Mk V",
+        "Smithing Requirements": [
+            {"Material": "Woeful Rapier Mk IV", "Quantity": 1},
+            {"Material": "Crescent Rapier Token", "Quantity": 1},
+            {"Material": "Friday 13th Hockey Mask", "Quantity": 1},
+            {"Material": "Machete Shard", "Quantity": 2},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34, 13 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Harvest Reaver Mk V",
+        "Smithing Requirements": [
+            {"Material": "Harvest Reaver Mk IV", "Quantity": 1},
+            {"Material": "Crescent Dagger Token", "Quantity": 1},
+            {"Material": "Friday 13th Hockey Mask", "Quantity": 1},
+            {"Material": "Machete Shard", "Quantity": 2},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34, 13 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Lunar Reaper",
+        "Smithing Requirements": [
+            {"Material": "Soulbane One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 31 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Emberwrath",
+        "Smithing Requirements": [
+            {"Material": "Soulbane Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 31 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Spectral Whisper",
+        "Smithing Requirements": [
+            {"Material": "Soulbane Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 31 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Nightshade Fang",
+        "Smithing Requirements": [
+            {"Material": "Soulbane Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 150},
+            {"Material": "Candy", "Quantity": 75},
+            {"Material": "Have Event Quests 31 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Lunar Reaper MK II",
+        "Smithing Requirements": [
+            {"Material": "Lunar Reaper", "Quantity": 1},
+            {"Material": "Soulbane One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Emberwrath MK II",
+        "Smithing Requirements": [
+            {"Material": "Emberwrath", "Quantity": 1},
+            {"Material": "Soulbane Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Spectral Whisper MK II",
+        "Smithing Requirements": [
+            {"Material": "Spectral Whisper", "Quantity": 1},
+            {"Material": "Soulbane Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Nightshade Fang MK II",
+        "Smithing Requirements": [
+            {"Material": "Nightshade Fang", "Quantity": 1},
+            {"Material": "Soulbane Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Lunar Reaper MK III",
+        "Smithing Requirements": [
+            {"Material": "Lunar Reaper MK II", "Quantity": 1},
+            {"Material": "Soulbane One-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Emberwrath MK III",
+        "Smithing Requirements": [
+            {"Material": "Emberwrath MK II", "Quantity": 1},
+            {"Material": "Soulbane Two-Handed Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Spectral Whisper MK III",
+        "Smithing Requirements": [
+            {"Material": "Spectral Whisper MK II", "Quantity": 1},
+            {"Material": "Soulbane Rapier Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Nightshade Fang MK III",
+        "Smithing Requirements": [
+            {"Material": "Nightshade Fang MK II", "Quantity": 1},
+            {"Material": "Soulbane Dagger Token", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 125},
+            {"Material": "Candy", "Quantity": 50},
+            {"Material": "Have Event Quests 31, 32, 33 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Lunar Reaper MK IV",
+        "Smithing Requirements": [
+            {"Material": "Lunar Reaper MK III", "Quantity": 1},
+            {"Material": "Soulbane One-Handed Token", "Quantity": 1},
+            {"Material": "Forsaken Soul Slayer", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Emberwrath MK IV",
+        "Smithing Requirements": [
+            {"Material": "Emberwrath MK III", "Quantity": 1},
+            {"Material": "Soulbane Two-Handed Token", "Quantity": 1},
+            {"Material": "Forsaken Soul Slayer", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Spectral Whisper MK IV",
+        "Smithing Requirements": [
+            {"Material": "Spectral Whisper MK III", "Quantity": 1},
+            {"Material": "Soulbane Rapier Token", "Quantity": 1},
+            {"Material": "Forsaken Soul Slayer", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Nightshade Fang MK IV",
+        "Smithing Requirements": [
+            {"Material": "Nightshade Fang MK III", "Quantity": 1},
+            {"Material": "Soulbane Dagger Token", "Quantity": 1},
+            {"Material": "Forsaken Soul Slayer", "Quantity": 1},
+            {"Material": "Candy Corn", "Quantity": 140},
+            {"Material": "Candy", "Quantity": 65},
+            {"Material": "Have Event Quests 31, 32, 33, 34 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Cornucopia Shield Mk I",
+        "Smithing Requirements": [
+            {"Material": "Cornucopia", "Quantity": 4},
+            {"Material": "Turkey Leg", "Quantity": 8},
+            {"Material": "Turkey Feather", "Quantity": 150}
+        ]
+    },
+    {
+        "Item Name": "Cornucopia Shield Mk II",
+        "Smithing Requirements": [
+            {"Material": "Cornucopia", "Quantity": 4},
+            {"Material": "Turkey Leg", "Quantity": 10},
+            {"Material": "Cornucopia Shield Mk I", "Quantity": 1},
+            {"Material": "Turkey Feather", "Quantity": 125}
+        ]
+    },
+    {
+        "Item Name": "Peppermint Shield MK II",
+        "Smithing Requirements": [
+            {"Material": "Peppermint Shield MK I", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 75},
+            {"Material": "Gingerbread Man", "Quantity": 125},
+            {"Material": "Santa Green Hat", "Quantity": 3},
+            {"Material": "Santa Red Hat", "Quantity": 3}
+        ]
+    },
+    {
+        "Item Name": "White Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Red Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Blue Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Yellow Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Green Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Orange Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Purple Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Pink Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Black Antlers Overlay",
+        "Smithing Requirements": [
+            {"Material": "Antlers Overlay", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa White Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa Red Hat Overlay", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Red Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Blue Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Yellow Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Green Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Orange Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Purple Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Pink Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Santa Black Hat Overlay",
+        "Smithing Requirements": [
+            {"Material": "Santa White Hat Overlay", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat White Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat Black Overlay", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Black Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Red Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Blue Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Yellow Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Green Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Orange Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Purple Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Top Hat Pink Overlay",
+        "Smithing Requirements": [
+            {"Material": "Top Hat White Overlay", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter White Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter Red Scarf Overlay", "Quantity": 1},
+            {"Material": "Undying Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Red Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Red Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Blue Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Blue Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Yellow Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Yellow Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Green Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Green Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Orange Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Orange Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Purple Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Purple Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Pink Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Pink Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Black Scarf Overlay",
+        "Smithing Requirements": [
+            {"Material": "Winter White Scarf Overlay", "Quantity": 1},
+            {"Material": "Black Dye", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frostbitten Blade",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 150},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 75},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frosted Onyx Buster",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 150},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 75},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Caroler Piercer",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 150},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 75},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mistletoe Dagger",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 150},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 75},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frostbitten Blade Mk II",
+        "Smithing Requirements": [
+            {"Material": "Frostbitten Blade", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frosted Onyx Buster Mk II",
+        "Smithing Requirements": [
+            {"Material": "Frosted Onyx Buster", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Caroler Piercer Mk II",
+        "Smithing Requirements": [
+            {"Material": "Caroler Piercer", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mistletoe Dagger Mk II",
+        "Smithing Requirements": [
+            {"Material": "Mistletoe Dagger", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frostbitten Blade Mk III",
+        "Smithing Requirements": [
+            {"Material": "Frostbitten Blade Mk II", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 and 53 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frosted Onyx Buster Mk III",
+        "Smithing Requirements": [
+            {"Material": "Frosted Onyx Buster Mk II", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 and 53 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Caroler Piercer Mk III",
+        "Smithing Requirements": [
+            {"Material": "Caroler Piercer Mk II", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 and 53 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mistletoe Dagger Mk III",
+        "Smithing Requirements": [
+            {"Material": "Mistletoe Dagger Mk II", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 125},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 50},
+            {"Material": "Have Event Quests 52 and 53 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frostbitten Blade Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Frostbitten Blade Mk III", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 1},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 2},
+            {"Material": "Have Event Quests 52, 53 and 54 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frosted Onyx Buster Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Frosted Onyx Buster Mk III", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 1},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 2},
+            {"Material": "Have Event Quests 52, 53 and 54 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Caroler Piercer Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Caroler Piercer Mk III", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 1},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 2},
+            {"Material": "Have Event Quests 52, 53 and 54 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mistletoe Dagger Mk IV",
+        "Smithing Requirements": [
+            {"Material": "Mistletoe Dagger Mk III", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 1},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 2},
+            {"Material": "Have Event Quests 52, 53 and 54 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frostbitten Blade Mk V",
+        "Smithing Requirements": [
+            {"Material": "Frostbitten Blade Mk IV", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 3},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 4},
+            {"Material": "Christmas Spirit", "Quantity": 1},
+            {"Material": "Have Event Quests 52, 53, 54 and 55 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Frosted Onyx Buster Mk V",
+        "Smithing Requirements": [
+            {"Material": "Frosted Onyx Buster Mk IV", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 3},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 4},
+            {"Material": "Christmas Spirit", "Quantity": 1},
+            {"Material": "Have Event Quests 52, 53, 54 and 55 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Caroler Piercer Mk V",
+        "Smithing Requirements": [
+            {"Material": "Caroler Piercer Mk IV", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 3},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 4},
+            {"Material": "Christmas Spirit", "Quantity": 1},
+            {"Material": "Have Event Quests 52, 53, 54 and 55 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Mistletoe Dagger Mk V",
+        "Smithing Requirements": [
+            {"Material": "Mistletoe Dagger Mk IV", "Quantity": 1},
+            {"Material": "Coal", "Quantity": 140},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Gingerbread Man", "Quantity": 65},
+            {"Material": "Divine Revival Stone", "Quantity": 3},
+            {"Material": "Renegade Saint Axe", "Quantity": 1},
+            {"Material": "Santa Red Hat", "Quantity": 4},
+            {"Material": "Christmas Spirit", "Quantity": 1},
+            {"Material": "Have Event Quests 52, 53, 54 and 55 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Snowflake Necklace",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 75},
+            {"Material": "Snowflake", "Quantity": 1},
+            {"Material": "Have Event Quests 52 Complete", "Quantity": 1}
+        ]
+    },
+    {
+        "Item Name": "Winter Guardian Armor",
+        "Smithing Requirements": [
+            {"Material": "Coal", "Quantity": 350},
+            {"Material": "Antlers", "Quantity": 2},
+            {"Material": "Santa Green Hat", "Quantity": 3},
+            {"Material": "Santa Red Hat", "Quantity": 2},
+            {"Material": "Winter Guard's Breastplate", "Quantity": 1},
+            {"Material": "Winter Guard's Boot", "Quantity": 1},
+            {"Material": "Winter Guard's Helm", "Quantity": 1},
+            {"Material": "Winter Guard's Gauntlet", "Quantity": 1},
+            {"Material": "Guardian's Seal", "Quantity": 1},
+            {"Material": "Have Event Quests 56, 57, 58, 59, 60-1, 60-2 Complete", "Quantity": 1}
+        ]
+    }
+]
