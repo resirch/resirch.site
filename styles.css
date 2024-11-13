@@ -105,8 +105,9 @@ p {
 
 .container {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -346,6 +347,43 @@ a {
 }
 
 a:hover {
+    background-color: var(--accent-color-transparent);
+    color: var(--background-color);
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.styled-button {
+    background-color: transparent;
+    border: 2px solid var(--accent-color-transparent);
+    color: var(--accent-color-transparent);
+    padding: 10px 20px;
+    margin: 10px 0;  /* Add margin for spacing */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.styled-button:hover {
     background-color: var(--accent-color-transparent);
     color: var(--background-color);
 }
