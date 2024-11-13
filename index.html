@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="styles.css?v=1.0">
 </head>
 <body>
+    <header>
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        </script>
+    </header>
     <div class="container">
         <h1>Resirch.site</h1>
         <p>Welcome to Resirch.site, the place where all my projects are gathered. Explore and learn more about the work I do.</p>
-        <a href="projects.html">View Projects</a>
     </div>
 </body>
 </html>
