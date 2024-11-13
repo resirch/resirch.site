@@ -173,6 +173,55 @@
         #create-post-form button {
             margin-top: 10px;
         }
+        /* Modal styles */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 18, 18, 0.9);
+            display: none;
+            z-index: 1000;
+        }
+
+        .modal .modal-content {
+            background: var(--background-color);
+            margin: 50px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            position: relative;
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Left-align text in posts and modal */
+        .post h3,
+        .post p,
+        #post-modal h3,
+        #post-modal p,
+        #post-modal .replies h4,
+        #post-modal .replies p {
+            text-align: left;
+        }
+
+        /* Styles for user info */
+        .user-info-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .user-avatar {
+            border-radius: 50%;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -193,7 +242,7 @@
     <div id="login-container" class="center-text">
         <button id="discord-login" class="styled-button">Login with Discord</button>
         <!-- Show username if logged in -->
-        <span id="user-info"></span>
+        <div id="user-info"></div>
     </div>
 
     <!-- Create Post Button -->
@@ -232,6 +281,14 @@
         </div>
     </div>
 
+    <!-- Posted Modal -->
+    <div id="posted-modal" class="modal">
+        <div class="modal-content">
+            <p id="posted-message"></p>
+            <button id="close-posted-button" class="styled-button">Close</button>
+        </div>
+    </div>
+
     <!-- Additional JavaScript for the trading page -->
     <script>
         // JavaScript code for the trading page
@@ -242,7 +299,16 @@
         // Function to update the UI after the user is logged in
         function updateUIForLoggedInUser() {
             document.getElementById('discord-login').style.display = 'none';
-            document.getElementById('user-info').textContent = `Logged in as ${currentUser.username}`;
+
+            const userInfoDiv = document.getElementById('user-info');
+            const avatarUrl = getAvatarUrl(currentUser);
+
+            userInfoDiv.innerHTML = `
+                <div class="user-info-header">
+                    <img src="${avatarUrl}" alt="${currentUser.username}'s avatar" class="user-avatar">
+                    <span>Logged in as ${currentUser.username}</span>
+                </div>
+            `;
         }
 
         // Event listener for the Discord login button
@@ -270,29 +336,16 @@
             }
         };
 
-        // Function to fetch posts from the server (needs server-side implementation)
+        // Function to fetch posts from the server
         async function fetchPosts() {
-            // Fetch posts from your server
-            // Example:
-            // const response = await fetch('/api/getPosts');
-            // const posts = await response.json();
-
-            // Placeholder data
-            const posts = [
-                {
-                    id: 1,
-                    title: 'Looking to trade Sword A',
-                    content: 'I have Sword A and I am looking for Shield B.',
-                    datePosted: '2023-11-10',
-                    pinned: true,
-                    user: {
-                        username: 'User1',
-                        avatarUrl: 'https://cdn.discordapp.com/avatars/user1/avatar.png'
-                    }
-                },
-                // More posts...
-            ];
-            return posts;
+            try {
+                const response = await fetch('/api/getPosts');
+                const posts = await response.json();
+                return posts;
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+                return [];
+            }
         }
 
         // Function to render posts on the page
@@ -307,7 +360,7 @@
 
                 postElement.innerHTML = `
                     <div class="post-header">
-                        <img src="${post.user.avatarUrl}" alt="${post.user.username}'s avatar">
+                        <img src="${getAvatarUrl(post.user)}" alt="${post.user.username}'s avatar">
                         <span>${post.user.username}</span>
                     </div>
                     <h3>${post.title}</h3>
@@ -323,91 +376,89 @@
 
         // Function to open the post modal with post details and replies
         async function openPostModal(postId) {
-            // Fetch post details and replies from your server
-            // Example:
-            // const response = await fetch(`/api/getPost?id=${postId}`);
-            // const post = await response.json();
+            try {
+                const response = await fetch(`/api/getPost?id=${postId}`);
+                const post = await response.json();
 
-            // Placeholder data
-            const post = {
-                id: postId,
-                title: 'Looking to trade Sword A',
-                content: 'I have Sword A and I am looking for Shield B. Please contact me if interested.',
-                datePosted: '2023-11-10',
-                user: {
-                    username: 'User1',
-                    avatarUrl: 'https://cdn.discordapp.com/avatars/user1/avatar.png'
-                },
-                replies: [
-                    {
-                        id: 1,
-                        content: 'I have Shield B, interested in swapping?',
-                        user: {
-                            username: 'User2',
-                            avatarUrl: 'https://cdn.discordapp.com/avatars/user2/avatar.png'
-                        }
-                    },
-                    // More replies...
-                ]
-            };
-
-            const modalContent = document.getElementById('modal-content');
-            modalContent.innerHTML = `
-                <span class="close-btn" id="close-modal">&times;</span>
-                <div class="post-header">
-                    <img src="${post.user.avatarUrl}" alt="${post.user.username}'s avatar">
-                    <span>${post.user.username}</span>
-                </div>
-                <h3>${post.title}</h3>
-                <p>${post.content}</p>
-                <!-- Replies Section -->
-                <div class="replies">
-                    <h4>Replies</h4>
-                    ${post.replies.map(reply => `
-                        <div class="reply">
-                            <div class="post-header">
-                                <img src="${reply.user.avatarUrl}" alt="${reply.user.username}'s avatar">
-                                <span>${reply.user.username}</span>
-                            </div>
-                            <p>${reply.content}</p>
-                        </div>
-                    `).join('')}
-                </div>
-                <!-- Reply Form -->
-                <form id="reply-form">
-                    <textarea id="reply-content" maxlength="1000" required placeholder="Write your reply here..."></textarea>
-                    <button type="submit" class="styled-button">Reply</button>
-                </form>
-            `;
-
-            // Event listener for closing the modal
-            document.getElementById('close-modal').addEventListener('click', () => {
-                document.getElementById('post-modal').style.display = 'none';
-            });
-
-            // Event listener for submitting a reply
-            document.getElementById('reply-form').addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const replyContent = document.getElementById('reply-content').value;
-
-                if (replyContent.length > 0 && replyContent.length <= 1000) {
-                    // Submit reply to your server
-                    // Example:
-                    // await fetch('/api/addReply', {
-                    //     method: 'POST',
-                    //     headers: { 'Content-Type': 'application/json' },
-                    //     body: JSON.stringify({ postId: post.id, content: replyContent })
-                    // });
-
-                    // Placeholder for adding the reply to the UI
-                    alert('Reply submitted!');
-                    document.getElementById('reply-content').value = '';
-                } else {
-                    alert('Reply must be between 1 and 1000 characters.');
+                if (post.error) {
+                    alert(post.error);
+                    return;
                 }
-            });
 
-            document.getElementById('post-modal').style.display = 'block';
+                const modalContent = document.getElementById('modal-content');
+                modalContent.innerHTML = `
+                    <span class="close-btn" id="close-modal">&times;</span>
+                    <div class="post-header">
+                        <img src="${getAvatarUrl(post.user)}" alt="${post.user.username}'s avatar">
+                        <span>${post.user.username}</span>
+                    </div>
+                    <h3>${post.title}</h3>
+                    <p>${post.content}</p>
+                    <!-- Replies Section -->
+                    <div class="replies">
+                        <h4>Replies</h4>
+                        ${post.replies.map(reply => `
+                            <div class="reply">
+                                <div class="post-header">
+                                    <img src="${getAvatarUrl(reply.user)}" alt="${reply.user.username}'s avatar">
+                                    <span>${reply.user.username}</span>
+                                </div>
+                                <p>${reply.content}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <!-- Reply Form -->
+                    <form id="reply-form">
+                        <textarea id="reply-content" maxlength="1000" required placeholder="Write your reply here..."></textarea>
+                        <button type="submit" class="styled-button">Reply</button>
+                    </form>
+                `;
+
+                // Event listener for closing the modal
+                document.getElementById('close-modal').addEventListener('click', () => {
+                    document.getElementById('post-modal').style.display = 'none';
+                });
+
+                // Event listener for submitting a reply
+                document.getElementById('reply-form').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const replyContent = document.getElementById('reply-content').value;
+
+                    if (replyContent.length > 0 && replyContent.length <= 1000) {
+                        try {
+                            const response = await fetch('/api/addReply', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ postId: post.id, content: replyContent })
+                            });
+
+                            const result = await response.json();
+
+                            if (result.success) {
+                                // Show success popup
+                                showPostedPopup('Reply submitted!');
+                                document.getElementById('reply-content').value = '';
+
+                                // Refresh the post modal to show the new reply
+                                openPostModal(post.id);
+                            } else {
+                                alert(result.error || 'An error occurred while submitting the reply.');
+                            }
+                        } catch (error) {
+                            console.error('Error submitting reply:', error);
+                            alert('An error occurred while submitting the reply.');
+                        }
+                    } else {
+                        alert('Reply must be between 1 and 1000 characters.');
+                    }
+                });
+
+                document.getElementById('post-modal').style.display = 'block';
+
+            } catch (error) {
+                console.error('Error fetching post:', error);
+                alert('Error fetching post details.');
+            }
         }
 
         // Function to open the create post modal
@@ -435,19 +486,29 @@
             const content = document.getElementById('post-content').value;
 
             if (title.length > 0 && title.length <= 100 && content.length > 0 && content.length <= 1000) {
-                // Submit post to your server
-                // Example:
-                // await fetch('/api/createPost', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify({ title, content, user: currentUser })
-                // });
+                try {
+                    const response = await fetch('/api/createPost', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ title, content })
+                    });
 
-                // Placeholder for adding the post to the UI
-                alert('Post submitted!');
-                document.getElementById('create-post-modal').style.display = 'none';
-                // Refresh posts
-                init();
+                    const result = await response.json();
+
+                    if (result.success) {
+                        // Show success popup
+                        showPostedPopup('Post submitted!');
+                        document.getElementById('create-post-form').reset();
+                        document.getElementById('create-post-modal').style.display = 'none';
+                        // Refresh posts
+                        init();
+                    } else {
+                        alert(result.error || 'An error occurred while submitting the post.');
+                    }
+                } catch (error) {
+                    console.error('Error submitting post:', error);
+                    alert('An error occurred while submitting the post.');
+                }
             } else {
                 alert('Title must be between 1 and 100 characters. Content must be between 1 and 1000 characters.');
             }
@@ -476,6 +537,34 @@
 
         // Initialize the page when the DOM is loaded
         document.addEventListener('DOMContentLoaded', init);
+
+        // Helper function to get avatar URL
+        function getAvatarUrl(user) {
+            return user.avatar
+                ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
+                : 'media/default_avatar.png';
+        }
+
+        // Function to show the posted modal
+        function showPostedPopup(message) {
+            const postedModal = document.getElementById('posted-modal');
+            const postedMessage = document.getElementById('posted-message');
+            postedMessage.textContent = message;
+            postedModal.style.display = 'block';
+        }
+
+        // Event listener for closing the posted modal
+        document.getElementById('close-posted-button').addEventListener('click', () => {
+            document.getElementById('posted-modal').style.display = 'none';
+        });
+
+        // Close modal when clicking outside of the modal content
+        window.addEventListener('click', (event) => {
+            const postedModal = document.getElementById('posted-modal');
+            if (event.target === postedModal) {
+                postedModal.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>

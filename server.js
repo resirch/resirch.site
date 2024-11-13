@@ -93,6 +93,91 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
+// In-memory data storage
+const posts = []; // This will hold all posts
+
+// Endpoint to fetch all posts
+app.get('/api/getPosts', (req, res) => {
+    res.json(posts);
+});
+
+// Endpoint to create a new post
+app.post('/api/createPost', (req, res) => {
+    if (!req.session.user) {
+        return res.status(401).json({ error: 'User not authenticated' });
+    }
+
+    const { title, content } = req.body;
+
+    if (title.length === 0 || title.length > 100 || content.length === 0 || content.length > 1000) {
+        return res.status(400).json({ error: 'Invalid title or content length' });
+    }
+
+    const newPost = {
+        id: posts.length + 1,
+        title,
+        content,
+        datePosted: new Date().toISOString(),
+        pinned: false,
+        user: {
+            username: req.session.user.username,
+            id: req.session.user.id,
+            avatar: req.session.user.avatar
+        },
+        replies: []
+    };
+
+    posts.push(newPost);
+
+    res.json({ success: true, post: newPost });
+});
+
+// Endpoint to fetch a specific post by id
+app.get('/api/getPost', (req, res) => {
+    const postId = parseInt(req.query.id);
+
+    const post = posts.find(p => p.id === postId);
+
+    if (!post) {
+        return res.status(404).json({ error: 'Post not found' });
+    }
+
+    res.json(post);
+});
+
+// Endpoint to add a reply to a post
+app.post('/api/addReply', (req, res) => {
+    if (!req.session.user) {
+        return res.status(401).json({ error: 'User not authenticated' });
+    }
+
+    const { postId, content } = req.body;
+    const post = posts.find(p => p.id === postId);
+
+    if (!post) {
+        return res.status(404).json({ error: 'Post not found' });
+    }
+
+    if (content.length === 0 || content.length > 1000) {
+        return res.status(400).json({ error: 'Invalid content length' });
+    }
+
+    const newReply = {
+        id: post.replies.length + 1,
+        content,
+        datePosted: new Date().toISOString(),
+        user: {
+            username: req.session.user.username,
+            id: req.session.user.id,
+            avatar: req.session.user.avatar
+        }
+    };
+
+    post.replies.push(newReply);
+
+    res.json({ success: true, reply: newReply });
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
