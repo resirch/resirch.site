@@ -155,13 +155,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
-// In-memory data storage
-const posts = []; // This will hold all posts
-
-// Endpoint to fetch all posts
-app.get('/api/getPosts', (req, res) => {
-    res.json(posts);
-});
+// Require the Post model
+const Post = require('./models/Post');
 
 // Endpoint to create a new post
 app.post('/api/createPost', async (req, res) => {
@@ -179,36 +174,41 @@ app.post('/api/createPost', async (req, res) => {
         return res.status(400).json({ error: 'Content contains inappropriate language' });
     }
 
-    const newPost = {
-        id: posts.length + 1,
+    // Create a new post using the Mongoose model
+    const newPost = new Post({
         title,
         content,
-        datePosted: new Date().toISOString(),
-        pinned: false,
-        user: {
-            username: req.session.user.username,
-            id: req.session.user.id,
-            avatar: req.session.user.avatar
-        },
-        replies: []
-    };
+        user: req.user._id, // Store the reference to the user
+    });
 
-    posts.push(newPost);
-
-    res.json({ success: true, post: newPost });
+    try {
+        await newPost.save();
+        res.json({ success: true, post: newPost });
+    } catch (error) {
+        console.error('Error creating post:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
 });
 
 // Endpoint to fetch a specific post by id
-app.get('/api/getPost', (req, res) => {
-    const postId = parseInt(req.query.id);
+app.get('/api/getPost', async (req, res) => {
+    const postId = req.query.id;
 
-    const post = posts.find(p => p.id === postId);
+    try {
+        const post = await Post.findById(postId)
+            .populate('user', 'username avatar discordId')
+            .populate('replies.user', 'username avatar discordId')
+            .lean();
 
-    if (!post) {
-        return res.status(404).json({ error: 'Post not found' });
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        res.json(post);
+    } catch (error) {
+        console.error('Error fetching post:', error);
+        res.status(500).json({ error: 'Internal server error' });
     }
-
-    res.json(post);
 });
 
 // Endpoint to add a reply to a post
@@ -248,9 +248,6 @@ app.post('/api/addReply', async (req, res) => {
 
     res.json({ success: true, reply: newReply });
 });
-
-// Require the Post model
-const Post = require('./models/Post');
 
 // Endpoint to delete a post
 app.delete('/api/deletePost', async (req, res) => {
