@@ -307,8 +307,12 @@
                 <div class="user-info-header">
                     <img src="${avatarUrl}" alt="${currentUser.username}'s avatar" class="user-avatar">
                     <span>Logged in as ${currentUser.username}</span>
+                    <button id="logout-button" class="styled-button">Logout</button>
                 </div>
             `;
+
+            // Add event listener for the logout button
+            document.getElementById('logout-button').addEventListener('click', logout);
         }
 
         // Event listener for the Discord login button
@@ -394,6 +398,9 @@
         async function openPostModal(postId) {
             try {
                 const response = await fetch(`/api/getPost?id=${postId}`);
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.status} ${response.statusText}`);
+                }
                 const post = await response.json();
 
                 if (post.error) {
@@ -473,6 +480,19 @@
                 });
 
                 document.getElementById('post-modal').style.display = 'block';
+
+                // Add event listeners for delete reply buttons
+                const deleteReplyButtons = modalContent.querySelectorAll('.delete-reply-btn');
+                deleteReplyButtons.forEach(button => {
+                    button.addEventListener('click', async (event) => {
+                        event.stopPropagation();
+                        const replyId = button.dataset.replyId;
+                        const postId = button.dataset.postId;
+                        await deleteReply(postId, replyId);
+                        // Refresh the modal
+                        openPostModal(postId);
+                    });
+                });
 
             } catch (error) {
                 console.error('Error fetching post:', error);
@@ -614,19 +634,6 @@
             }
         }
 
-        // Add event listeners for delete reply buttons
-        const deleteReplyButtons = document.querySelectorAll('.delete-reply-btn');
-        deleteReplyButtons.forEach(button => {
-            button.addEventListener('click', async (event) => {
-                event.stopPropagation();
-                const replyId = button.dataset.replyId;
-                const postId = button.dataset.postId;
-                await deleteReply(postId, replyId);
-                // Refresh the modal
-                openPostModal(postId);
-            });
-        });
-
         async function deleteReply(postId, replyId) {
             if (confirm('Are you sure you want to delete this reply?')) {
                 try {
@@ -647,6 +654,30 @@
                     console.error('Error deleting reply:', error);
                     alert('An error occurred while deleting the reply.');
                 }
+            }
+        }
+
+        async function logout() {
+            try {
+                const response = await fetch('/auth/discord/logout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Remove current user info
+                    currentUser = null;
+                    // Update UI to reflect logged-out state
+                    document.getElementById('user-info').innerHTML = '';
+                    document.getElementById('discord-login').style.display = 'block';
+                } else {
+                    alert('An error occurred while logging out.');
+                }
+            } catch (error) {
+                console.error('Error during logout:', error);
+                alert('An error occurred while logging out.');
             }
         }
     </script>

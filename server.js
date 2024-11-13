@@ -56,7 +56,7 @@ app.use(async (req, res, next) => {
     next();
 });
 
-// Define your API routes here BEFORE the static middleware
+// Define your API routes BEFORE the static file middleware
 
 // Endpoint to get the currently logged-in user
 app.get('/auth/discord/user', (req, res) => {
@@ -243,9 +243,21 @@ app.delete('/api/deleteReply', async (req, res) => {
     }
 });
 
+// Endpoint to log out the user
+app.post('/auth/discord/logout', (req, res) => {
+    // Destroy the session
+    req.session.destroy((err) => {
+        if (err) {
+            console.error('Error destroying session:', err);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+        res.json({ success: true });
+    });
+});
+
 // Other API routes (e.g., /api/addReply, /api/deletePost, /api/deleteReply) should be defined here as well
 
-// Now, serve static files from the 'docs' directory
+// Place the static file middleware AFTER all other routes
 app.use(express.static(path.join(__dirname, 'docs')));
 
 // Default route
