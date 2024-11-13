@@ -119,6 +119,130 @@ app.post('/api/createPost', async (req, res) => {
     }
 });
 
+// Endpoint to get a single post by ID
+app.get('/api/getPost', async (req, res) => {
+    const postId = req.query.id;
+
+    try {
+        // Find the post by ID
+        const post = await Post.findById(postId)
+            .populate('user', 'username avatar discordId')
+            .populate('replies.user', 'username avatar discordId')
+            .lean();
+
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        res.json(post);
+    } catch (error) {
+        console.error('Error fetching post:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// Endpoint to delete a post
+app.delete('/api/deletePost', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({ error: 'User not authenticated' });
+    }
+
+    const { postId } = req.body;
+
+    try {
+        const post = await Post.findById(postId);
+
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        // Check if the user is the author or an admin
+        if (post.user.toString() !== req.user._id.toString() && !req.user.isAdmin) {
+            return res.status(403).json({ error: 'Permission denied' });
+        }
+
+        await post.remove();
+
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error deleting post:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// Endpoint to add a reply to a post
+app.post('/api/addReply', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({ error: 'User not authenticated' });
+    }
+
+    const { postId, content } = req.body;
+
+    if (content.length === 0 || content.length > 1000) {
+        return res.status(400).json({ error: 'Invalid content length' });
+    }
+
+    if (filter.isProfane(content)) {
+        return res.status(400).json({ error: 'Content contains inappropriate language' });
+    }
+
+    try {
+        const post = await Post.findById(postId);
+
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        post.replies.push({
+            content,
+            user: req.user._id,
+        });
+
+        await post.save();
+
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error adding reply:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// Endpoint to delete a reply
+app.delete('/api/deleteReply', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({ error: 'User not authenticated' });
+    }
+
+    const { postId, replyId } = req.body;
+
+    try {
+        const post = await Post.findById(postId);
+
+        if (!post) {
+            return res.status(404).json({ error: 'Post not found' });
+        }
+
+        const reply = post.replies.id(replyId);
+
+        if (!reply) {
+            return res.status(404).json({ error: 'Reply not found' });
+        }
+
+        // Check if the user is the author or an admin
+        if (reply.user.toString() !== req.user._id.toString() && !req.user.isAdmin) {
+            return res.status(403).json({ error: 'Permission denied' });
+        }
+
+        reply.remove();
+        await post.save();
+
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error deleting reply:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
 // Other API routes (e.g., /api/addReply, /api/deletePost, /api/deleteReply) should be defined here as well
 
 // Now, serve static files from the 'docs' directory

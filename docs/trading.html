@@ -559,7 +559,9 @@
 
         // Helper function to get avatar URL
         function getAvatarUrl(user) {
-            if (user.avatar && user.discordId) {
+            if (user && user.avatar && user.id) {
+                return `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`;
+            } else if (user && user.avatar && user.discordId) {
                 return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
             } else {
                 return 'media/default_avatar.png';
