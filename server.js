@@ -299,7 +299,7 @@ app.get('/auth/discord/callback', async (req, res) => {
         req.session.userId = user._id;
 
         // Redirect back to the trading page
-        res.redirect('/trading.html');
+        res.redirect('/trading/trading.html');
     } catch (error) {
         if (error.response) {
             console.error('Error data:', error.response.data);
