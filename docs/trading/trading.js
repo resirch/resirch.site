@@ -17,7 +17,7 @@ function updateUIForLoggedInUser() {
 // Event listener for the Discord login button
 document.getElementById('discord-login').addEventListener('click', () => {
     const params = new URLSearchParams({
-        client_id: 'YOUR_DISCORD_CLIENT_ID', // Replace with your actual Discord Client ID
+        client_id: '1306118587794063420', // Replace with your actual Discord Client ID
         redirect_uri: 'https://resirch.site/auth/discord/callback',
         response_type: 'code',
         scope: 'identify'
