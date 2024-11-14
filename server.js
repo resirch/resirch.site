@@ -14,7 +14,7 @@ const User = require('./models/User');
 const Post = require('./models/Post');
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/trading-database');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/trading-database');
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -34,7 +34,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost/trading-database',
+        mongoUrl: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/trading-database',
         collectionName: 'sessions'
     }),
     cookie: { maxAge: 2 * 7 * 24 * 60 * 60 * 1000 } // Expires in 2 weeks
