@@ -12,7 +12,7 @@ let selectedItemName = localStorage.getItem('selectedItemName') || '';
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 // Fetch the items from the JSON file
-fetch('/blacksmithingItems.json')
+fetch('blacksmithingItems.json')
     .then(response => response.json())
     .then(data => {
         items = data;
