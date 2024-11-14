@@ -308,6 +308,16 @@ app.get('/auth/discord/callback', async (req, res) => {
     }
 });
 
+// Endpoint to log out the user
+app.post('/auth/discord/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            console.error('Error destroying session:', err);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+        res.json({ success: true });
+    });
+});
 
 // sudo systemctl stop nginx if ports are being used sudo lsof -i :80 to check
 // 

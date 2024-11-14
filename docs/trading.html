@@ -175,27 +175,38 @@
         }
         /* Modal styles */
         .modal {
-            position: fixed;
-            top: 0;
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 60px; /* Location of the box */
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(18, 18, 18, 0.9);
-            display: none;
-            z-index: 1000;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black with opacity */
         }
 
-        .modal .modal-content {
-            background: var(--background-color);
-            margin: 50px auto;
+        .modal-content {
+            background-color: #f9f9f9;
+            margin: 5% auto; /* Centered */
             padding: 20px;
-            width: 80%;
-            max-width: 400px;
-            position: relative;
-            color: var(--text-color);
-            border: 1px solid var(--accent-color);
-            border-radius: 5px;
-            text-align: center;
+            border: 1px solid #888;
+            width: 80%; /* Adjust as needed */
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         /* Left-align text in posts and modal */
@@ -221,6 +232,12 @@
             margin-right: 10px;
             width: 50px;
             height: 50px;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -261,7 +278,7 @@
     </div>
 
     <!-- Post Modal -->
-    <div id="post-modal">
+    <div id="post-modal" class="modal">
         <div class="modal-content" id="modal-content">
             <span class="close-btn" id="close-modal">&times;</span>
             <!-- Post details and replies will be inserted here -->
@@ -297,11 +314,14 @@
         function updateUIForLoggedInUser() {
             const userInfo = document.getElementById('user-info');
             userInfo.innerHTML = `
-                <img src="${getAvatarUrl(currentUser)}" alt="Avatar" width="50" height="50">
+                <img src="${getAvatarUrl(currentUser)}" alt="Avatar" width="50" height="50" class="avatar">
                 <span>${currentUser.username}</span>
-                <button onclick="logout()" class="styled-button">Logout</button>
+                <button id="logout-btn" class="styled-button">Logout</button>
             `;
             document.getElementById('discord-login').style.display = 'none';
+
+            // Attach event listener for logout
+            document.getElementById('logout-btn').addEventListener('click', logout);
         }
 
         // Event listener for the Discord login button
@@ -357,6 +377,7 @@
                 const postDiv = document.createElement('div');
                 postDiv.classList.add('post');
                 postDiv.innerHTML = `
+                    <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar">
                     <h3>${post.title}</h3>
                     <p>by ${post.user.username}</p>
                     ${currentUser && (currentUser.id === post.user.discordId || currentUser.isAdmin)
@@ -364,14 +385,19 @@
                         : ''}
                 `;
 
-                postDiv.addEventListener('click', (event) => {
-                    if (event.target.classList.contains('delete-post-btn')) {
+                // Attach event listener for delete button
+                const deleteButton = postDiv.querySelector('.delete-post-btn');
+                if (deleteButton) {
+                    deleteButton.addEventListener('click', async (event) => {
                         event.stopPropagation();
-                        const postId = event.target.getAttribute('data-post-id');
-                        deletePost(postId);
-                    } else {
-                        openPostModal(post._id);
-                    }
+                        const postId = deleteButton.getAttribute('data-post-id');
+                        await deletePost(postId);
+                    });
+                }
+
+                // Attach event listener to open post modal
+                postDiv.addEventListener('click', () => {
+                    openPostModal(post._id);
                 });
 
                 postsGrid.appendChild(postDiv);
@@ -388,16 +414,54 @@
                 const post = await response.json();
 
                 // Populate the modal with post data
-                // Add your modal code here
+                const modalContent = document.getElementById('modal-content');
+                modalContent.innerHTML = `
+                    <span class="close-btn" id="close-modal">&times;</span>
+                    <h2>${post.title}</h2>
+                    <p>${post.content}</p>
+                    <p>by ${post.user.username}</p>
+                    <div id="replies-container">
+                        <h3>Replies</h3>
+                        ${post.replies.map(reply => `
+                            <div class="reply">
+                                <p>${reply.content}</p>
+                                <p>by ${reply.user.username}</p>
+                                ${currentUser && (currentUser.id === reply.user.discordId || currentUser.isAdmin)
+                                    ? `<button class="delete-reply-btn" data-reply-id="${reply._id}" data-post-id="${post._id}">Delete</button>`
+                                    : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <form id="reply-form">
+                        <textarea id="reply-content" placeholder="Add a reply..." required maxlength="500"></textarea>
+                        <button type="submit" class="styled-button">Submit Reply</button>
+                    </form>
+                `;
 
+                // Show the modal
                 document.getElementById('post-modal').style.display = 'block';
+
+                // Attach event listener to close button
+                document.getElementById('close-modal').addEventListener('click', () => {
+                    document.getElementById('post-modal').style.display = 'none';
+                });
+
+                // Attach event listener for reply form submission
+                document.getElementById('reply-form').addEventListener('submit', async (event) => {
+                    event.preventDefault();
+                    await submitReply(postId);
+                    // Refresh the modal content
+                    openPostModal(postId);
+                });
 
                 // Event listener for reply deletion
                 document.querySelectorAll('.delete-reply-btn').forEach(button => {
-                    button.addEventListener('click', (event) => {
+                    button.addEventListener('click', async (event) => {
                         event.stopPropagation();
                         const replyId = button.getAttribute('data-reply-id');
-                        deleteReply(postId, replyId);
+                        await deleteReply(postId, replyId);
+                        // Refresh the modal content
+                        openPostModal(postId);
                     });
                 });
 
@@ -430,9 +494,8 @@
 
         // Helper function to get avatar URL
         function getAvatarUrl(user) {
-            const discordId = user.discordId || user.id;
-            if (user && user.avatar && discordId) {
-                return `https://cdn.discordapp.com/avatars/${discordId}/${user.avatar}.png`;
+            if (user && user.avatar && user.discordId) {
+                return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
             } else {
                 return 'media/default_avatar.png';
             }
@@ -440,6 +503,143 @@
 
         // Other functions like deletePost, deleteReply, logout, etc.
         // Ensure these functions are properly defined in your script
+
+        async function deletePost(postId) {
+            if (confirm('Are you sure you want to delete this post?')) {
+                try {
+                    const response = await fetch(`/api/deletePost/${postId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        alert('Post deleted successfully!');
+                        // Refresh the posts
+                        init();
+                    } else {
+                        alert(result.error || 'An error occurred while deleting the post.');
+                    }
+                } catch (error) {
+                    console.error('Error deleting post:', error);
+                    alert('An error occurred while deleting the post.');
+                }
+            }
+        }
+
+        async function deleteReply(postId, replyId) {
+            if (confirm('Are you sure you want to delete this reply?')) {
+                try {
+                    const response = await fetch(`/api/deleteReply/${postId}/${replyId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        alert('Reply deleted successfully!');
+                        // Refresh the modal content
+                        openPostModal(postId);
+                    } else {
+                        alert(result.error || 'An error occurred while deleting the reply.');
+                    }
+                } catch (error) {
+                    console.error('Error deleting reply:', error);
+                    alert('An error occurred while deleting the reply.');
+                }
+            }
+        }
+
+        // Event listener for the 'Create Post' button
+        document.getElementById('create-post-btn').addEventListener('click', openCreatePostModal);
+
+        function openCreatePostModal() {
+            if (!currentUser) {
+                alert('You need to be logged in to create a post.');
+                return;
+            }
+            document.getElementById('create-post-modal').style.display = 'block';
+        }
+
+        // Event listener for closing the create post modal
+        document.getElementById('close-create-modal').addEventListener('click', () => {
+            document.getElementById('create-post-modal').style.display = 'none';
+        });
+
+        // Event listener for submit event on create post form
+        document.getElementById('create-post-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            await submitPost();
+        });
+
+        async function submitPost() {
+            const title = document.getElementById('post-title').value.trim();
+            const content = document.getElementById('post-content').value.trim();
+
+            if (!title || !content) {
+                alert('Please fill out both the title and content.');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/createPost', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ title, content }),
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Post created successfully!');
+                    // Close the modal
+                    document.getElementById('create-post-modal').style.display = 'none';
+                    // Refresh posts
+                    init();
+                } else {
+                    alert(result.error || 'An error occurred while creating the post.');
+                }
+            } catch (error) {
+                console.error('Error creating post:', error);
+                alert('An error occurred while creating the post.');
+            }
+        }
+
+        async function logout() {
+            try {
+                const response = await fetch('/auth/discord/logout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Remove current user info
+                    currentUser = null;
+                    // Update UI to reflect logged-out state
+                    document.getElementById('user-info').innerHTML = '';
+                    document.getElementById('discord-login').style.display = 'block';
+                    // Refresh posts
+                    init();
+                } else {
+                    alert(result.error || 'An error occurred while logging out.');
+                }
+            } catch (error) {
+                console.error('Error logging out:', error);
+                alert('An error occurred while logging out.');
+            }
+        }
 
     </script>
 </body>
