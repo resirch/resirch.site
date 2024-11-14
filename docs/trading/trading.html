@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trading Page</title>
+    <!-- Include your existing CSS files here -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="trading.css">
+</head>
+<body>
+    <!-- Existing Navbar -->
+    <header>
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('../navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        </script>
+    </header>
+
+    <!-- Discord Login Button -->
+    <div id="login-container" class="center-text">
+        <button id="discord-login" class="styled-button">Login with Discord</button>
+        <!-- Show username if logged in -->
+        <div id="user-info"></div>
+    </div>
+
+    <!-- Create Post Button -->
+    <div class="center-text">
+        <button id="create-post-btn" class="styled-button">Create Post</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search trading posts...">
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="posts-grid" id="posts-grid">
+        <!-- Trading posts will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Post Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <!-- Post details and replies will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div id="create-post-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-create-modal">&times;</span>
+            <h3>Create New Post</h3>
+            <form id="create-post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required maxlength="100">
+                <textarea id="post-content" placeholder="Post Content" required maxlength="1000"></textarea>
+                <button type="submit" class="styled-button">Submit Post</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Posted Modal -->
+    <div id="posted-modal" class="modal">
+        <div class="modal-content">
+            <p id="posted-message"></p>
+            <button id="close-posted-button" class="styled-button">Close</button>
+        </div>
+    </div>
+</body>
+</html>

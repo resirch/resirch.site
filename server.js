@@ -235,7 +235,11 @@ app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
     }
 });
 
-// Place the static file middleware AFTER all other routes
+// Updated to serve files from subdirectories
+app.use('/blacksmithing', express.static(path.join(__dirname, 'docs', 'blacksmithing')));
+app.use('/trading', express.static(path.join(__dirname, 'docs', 'trading')));
+
+// Keep the general static files serving for other assets
 app.use(express.static(path.join(__dirname, 'docs')));
 
 // Start the server
