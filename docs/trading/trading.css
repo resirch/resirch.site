@@ -233,10 +233,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 0 auto;
+    width: fit-content; /* Adjusts to content size */
 }
 
 .user-info-container .avatar {
@@ -254,4 +256,11 @@
     cursor: pointer;
     font-size: 18px;
     color: var(--text-color);
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
