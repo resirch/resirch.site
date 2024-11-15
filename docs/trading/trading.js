@@ -77,9 +77,11 @@ function renderPosts(posts) {
         const postDiv = document.createElement('div');
         postDiv.classList.add('post');
         postDiv.innerHTML = `
-            <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar">
+            <div class="post-header">
+                <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar">
+                <span>${post.user.username}</span>
+            </div>
             <h3>${post.title}</h3>
-            <p>by ${post.user.username}</p>
             ${currentUser && (currentUser.id === post.user.discordId || currentUser.isAdmin)
                 ? `<button class="delete-post-btn styled-button" data-post-id="${post._id}">Delete</button>`
                 : ''}
@@ -117,15 +119,21 @@ async function openPostModal(postId) {
         const modalContent = document.getElementById('modal-content');
         modalContent.innerHTML = `
             <span class="close-btn" id="close-modal">&times;</span>
+            <div class="post-header">
+                <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar">
+                <span>${post.user.username}</span>
+            </div>
             <h2>${post.title}</h2>
             <p>${post.content}</p>
-            <p>by <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar"> ${post.user.username}</p>
             <div id="replies-container">
                 <h3>Replies</h3>
                 ${post.replies.map(reply => `
                     <div class="reply">
-                        <p><img src="${getAvatarUrl(reply.user)}" alt="Avatar" class="avatar"> ${reply.content}</p>
-                        <p>by ${reply.user.username}</p>
+                        <div class="post-header">
+                            <img src="${getAvatarUrl(reply.user)}" alt="Avatar" class="avatar">
+                            <span>${reply.user.username}</span>
+                        </div>
+                        <p>${reply.content}</p>
                         ${currentUser && (currentUser.id === reply.user.discordId || currentUser.isAdmin)
                             ? `<button class="delete-reply-btn styled-button" data-reply-id="${reply._id}" data-post-id="${post._id}">Delete</button>`
                             : ''}
