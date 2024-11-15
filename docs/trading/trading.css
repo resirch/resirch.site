@@ -234,6 +234,10 @@
 
 #user-info .avatar {
     margin-right: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: auto;
+    min-width: 25px;
 }
 
 #user-info span {
@@ -242,4 +246,5 @@
 
 #user-info #logout-btn {
     margin-left: auto;
+    padding: 10px 20px;
 }
