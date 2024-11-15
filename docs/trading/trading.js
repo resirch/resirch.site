@@ -119,15 +119,15 @@ async function openPostModal(postId) {
             <span class="close-btn" id="close-modal">&times;</span>
             <h2>${post.title}</h2>
             <p>${post.content}</p>
-            <p>by ${post.user.username}</p>
+            <p>by <img src="${getAvatarUrl(post.user)}" alt="Avatar" class="avatar"> ${post.user.username}</p>
             <div id="replies-container">
                 <h3>Replies</h3>
                 ${post.replies.map(reply => `
                     <div class="reply">
-                        <p>${reply.content}</p>
+                        <p><img src="${getAvatarUrl(reply.user)}" alt="Avatar" class="avatar"> ${reply.content}</p>
                         <p>by ${reply.user.username}</p>
                         ${currentUser && (currentUser.id === reply.user.discordId || currentUser.isAdmin)
-                            ? `<button class="delete-reply-btn" data-reply-id="${reply._id}" data-post-id="${post._id}">Delete</button>`
+                            ? `<button class="delete-reply-btn styled-button" data-reply-id="${reply._id}" data-post-id="${post._id}">Delete</button>`
                             : ''}
                     </div>
                 `).join('')}
@@ -336,6 +336,7 @@ async function logout() {
             // Update UI to reflect logged-out state
             document.getElementById('user-info').innerHTML = '';
             document.getElementById('discord-login').style.display = 'block';
+            document.getElementById('login-container').style.display = 'flex'; // Ensure centering
 
             // Refresh posts
             init();

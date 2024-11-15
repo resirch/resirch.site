@@ -264,3 +264,29 @@
     align-items: center;
     margin: 20px 0;
 }
+
+/* Ensure replies wrap within the container */
+.reply p {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Style for delete buttons */
+.delete-post-btn,
+.delete-reply-btn {
+    background-color: transparent;
+    border: 2px solid var(--accent-color-transparent);
+    color: var(--accent-color-transparent);
+    padding: 5px 15px; /* Reduced padding */
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.delete-post-btn:hover,
+.delete-reply-btn:hover {
+    background-color: var(--accent-color-transparent);
+    color: var(--background-color);
+}
