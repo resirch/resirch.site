@@ -222,20 +222,24 @@
 }
 
 /* Styles for user info */
-.user-info-header {
+#user-info {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.avatar {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+#user-info .avatar {
     margin-right: 10px;
 }
 
-.center-text {
-    text-align: center;
+#user-info span {
+    margin-right: auto;
+}
+
+#user-info #logout-btn {
+    margin-left: auto;
 }
