@@ -226,7 +226,7 @@ app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
             return res.status(403).json({ error: 'Permission denied' });
         }
 
-        reply.remove();
+        reply.deleteOne();
         await post.save();
 
         res.json({ success: true });
