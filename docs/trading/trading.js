@@ -4,7 +4,7 @@ let currentUser = null;
 function updateUIForLoggedInUser() {
     const userInfo = document.getElementById('user-info');
     userInfo.innerHTML = `
-        <img src="${getAvatarUrl(currentUser)}" alt="Avatar" width="25" height="25" class="avatar">
+        <img src="${getAvatarUrl(currentUser)}" alt="Avatar" class="avatar">
         <span>${currentUser.username}</span>
         <button id="logout-btn" class="styled-button">Logout</button>
     `;
