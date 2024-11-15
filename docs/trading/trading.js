@@ -29,7 +29,9 @@ document.getElementById('discord-login').addEventListener('click', () => {
 window.onload = async () => {
     try {
         // Fetch user data from the server
-        const response = await fetch('/auth/discord/user');
+        const response = await fetch('/auth/discord/user', {
+            credentials: 'include',
+        });
         if (response.ok) {
             currentUser = await response.json();
             updateUIForLoggedInUser();
@@ -45,7 +47,9 @@ window.onload = async () => {
 // Function to fetch posts from the server
 async function fetchPosts() {
     try {
-        const response = await fetch('/api/getPosts');
+        const response = await fetch('/api/getPosts', {
+            credentials: 'include',
+        });
         if (!response.ok) {
             throw new Error(`Server error: ${response.status} ${response.statusText}`);
         }
@@ -203,6 +207,7 @@ async function deletePost(postId) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                credentials: 'include',
             });
 
             const result = await response.json();
@@ -229,6 +234,7 @@ async function deleteReply(postId, replyId) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                credentials: 'include',
             });
 
             const result = await response.json();
@@ -285,6 +291,7 @@ async function submitPost() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ title, content }),
+            credentials: 'include',
         });
 
         const result = await response.json();
@@ -311,6 +318,7 @@ async function logout() {
             headers: {
                 'Content-Type': 'application/json',
             },
+            credentials: 'include',
         });
 
         const result = await response.json();
@@ -352,6 +360,7 @@ async function submitReply(postId) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ content }),
+            credentials: 'include',
         });
 
         const result = await response.json();

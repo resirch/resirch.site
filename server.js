@@ -154,7 +154,7 @@ app.delete('/api/deletePost/:postId', async (req, res) => {
             return res.status(403).json({ error: 'Permission denied' });
         }
 
-        await post.remove();
+        await post.deleteOne();
 
         res.json({ success: true });
     } catch (error) {
@@ -163,12 +163,13 @@ app.delete('/api/deletePost/:postId', async (req, res) => {
     }
 });
 
-app.post('/api/addReply', async (req, res) => {
+app.post('/api/createReply/:postId', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({ error: 'User not authenticated' });
     }
 
-    const { postId, content } = req.body;
+    const { postId } = req.params;
+    const { content } = req.body;
 
     if (!content || content.length === 0 || content.length > 1000) {
         return res.status(400).json({ error: 'Invalid content length' });
