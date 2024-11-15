@@ -292,6 +292,7 @@ app.get('/auth/discord/callback', async (req, res) => {
             {
                 username: discordUser.username,
                 avatar: discordUser.avatar,
+                isAdmin: discordUser.id === '928087297902129182'
             },
             { upsert: true, new: true }
         );
