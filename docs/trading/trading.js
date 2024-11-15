@@ -187,7 +187,8 @@ function getAvatarUrl(user) {
     if (user && user.avatar && user.discordId) {
         return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
     } else {
-        return 'media/default_avatar.png';
+        console.out(user, user.avatar, user.discordId)
+        return '/media/default_avatar.png';
     }
 }
 
@@ -320,6 +321,10 @@ async function logout() {
             // Update UI to reflect logged-out state
             document.getElementById('user-info').innerHTML = '';
             document.getElementById('discord-login').style.display = 'block';
+
+            // Optionally, ensure the login button is centered
+            document.getElementById('discord-login').classList.add('styled-button');
+
             // Refresh posts
             init();
         } else {
@@ -328,5 +333,39 @@ async function logout() {
     } catch (error) {
         console.error('Error logging out:', error);
         alert('An error occurred while logging out.');
+    }
+}
+
+// Function to submit a reply
+async function submitReply(postId) {
+    const content = document.getElementById('reply-content').value.trim();
+
+    if (!content) {
+        alert('Please enter a reply.');
+        return;
+    }
+
+    try {
+        const response = await fetch(`/api/createReply/${postId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ content }),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Clear the reply input
+            document.getElementById('reply-content').value = '';
+            // Optionally, close the modal or refresh the replies
+            alert('Reply submitted successfully!');
+        } else {
+            alert(result.error || 'An error occurred while submitting the reply.');
+        }
+    } catch (error) {
+        console.error('Error submitting reply:', error);
+        alert('An error occurred while submitting the reply.');
     }
 }
