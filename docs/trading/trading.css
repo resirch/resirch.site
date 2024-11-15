@@ -165,15 +165,12 @@
 #create-post-form input[type="text"],
 #create-post-form textarea {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
     background-color: var(--background-color);
     color: var(--text-color);
-    resize: vertical;
-    min-height: 100px;
 }
 #create-post-form button {
     margin-top: 10px;
