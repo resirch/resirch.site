@@ -188,10 +188,11 @@ async function init() {
 
 // Helper function to get avatar URL
 function getAvatarUrl(user) {
-    if (user && user.avatar && user.id) {
-        return `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`;
+    const userId = user.discordId || user.id;
+    if (user && user.avatar && userId) {
+        return `https://cdn.discordapp.com/avatars/${userId}/${user.avatar}.png`;
     } else {
-        console.error('Missing avatar or id:', user);
+        console.error('Missing avatar or userId:', user);
         return '/media/default_avatar.png';
     }
 }
