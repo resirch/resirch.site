@@ -4,14 +4,20 @@ let currentUser = null;
 function updateUIForLoggedInUser() {
     const userInfo = document.getElementById('user-info');
     userInfo.innerHTML = `
-        <img src="${getAvatarUrl(currentUser)}" alt="Avatar" class="avatar">
-        <span>${currentUser.username}</span>
-        <button id="logout-btn" class="styled-button">Logout</button>
+        <div class="user-info-container">
+            <img src="${getAvatarUrl(currentUser)}" alt="Avatar" class="avatar">
+            <span>${currentUser.username}</span>
+            <span class="close-btn" id="logout-x">&times;</span>
+        </div>
     `;
     document.getElementById('discord-login').style.display = 'none';
 
-    // Attach event listener for logout
-    document.getElementById('logout-btn').addEventListener('click', logout);
+    // Attach event listener for the "X" button
+    document.getElementById('logout-x').addEventListener('click', () => {
+        if (confirm('Are you sure you want to log out?')) {
+            logout();
+        }
+    });
 }
 
 // Event listener for the Discord login button

@@ -228,28 +228,30 @@
     min-width: 25px;
 }
 
-/* Styles for user info */
-#user-info {
+/* User info container */
+.user-info-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: auto;
-    margin: 0 auto;
-    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
-#user-info .avatar {
-    margin-bottom: 10px;
+.user-info-container .avatar {
+    margin-right: 10px;
     border-radius: 50%;
     width: 35px;
     height: auto;
     min-width: 25px;
 }
 
-#user-info span {
-    margin-bottom: 10px;
-}
-
-#user-info #logout-btn {
-    padding: 10px 20px;
+.user-info-container .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-color);
 }
