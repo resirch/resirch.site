@@ -330,9 +330,6 @@ async function logout() {
             document.getElementById('user-info').innerHTML = '';
             document.getElementById('discord-login').style.display = 'block';
 
-            // Optionally, ensure the login button is centered
-            document.getElementById('discord-login').classList.add('styled-button');
-
             // Refresh posts
             init();
         } else {
