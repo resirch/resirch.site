@@ -221,19 +221,25 @@
     text-align: left;
 }
 
+.avatar {
+    border-radius: 50%;
+    width: 35px;
+    height: auto;
+    min-width: 25px;
+}
+
 /* Styles for user info */
 #user-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: none;
+    width: auto;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 #user-info .avatar {
-    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
     width: 35px;
     height: auto;
@@ -241,10 +247,9 @@
 }
 
 #user-info span {
-    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 #user-info #logout-btn {
-    margin-left: auto;
     padding: 10px 20px;
 }
