@@ -191,7 +191,7 @@ function getAvatarUrl(user) {
     if (user && user.avatar && user.discordId) {
         return `https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png`;
     } else {
-        console.out(user, user.avatar, user.discordId)
+        console.error(user, user.avatar, user.discordId)
         return '/media/default_avatar.png';
     }
 }
