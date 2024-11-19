@@ -3,20 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Blacksmithing - Resirch.site</title>
-    <link rel="stylesheet" href="../styles.css?v=1.2">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navbar:', error));
-        </script>
-    </header>
+    <%- include('partials/navbar') %>
 
     <!-- Introductory Content -->
     <div class="intro-container">
@@ -65,6 +55,6 @@
             Last updated: November 12, 2024
         </p>
     </footer>
-    <script src="blacksmithingScript.js"></script>
+    <script src="/js/blacksmithing.js"></script>
 </body>
 </html>

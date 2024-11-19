@@ -1,4 +1,4 @@
-// blacksmithingScript.js
+// blacksmithing.js
 
 let items = []; // This will hold the items loaded from the JSON file
 

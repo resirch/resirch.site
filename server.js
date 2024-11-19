@@ -14,7 +14,7 @@ const User = require('./models/User');
 const Post = require('./models/Post');
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/trading-database');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/forum-database');
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -23,6 +23,12 @@ db.once('open', () => {
 });
 
 const app = express();
+
+// Set EJS as the templating engine
+app.set('view engine', 'ejs');
+
+// Set the directory where your EJS templates will be located
+app.set('views', path.join(__dirname, 'views'));
 
 // Body Parser Middleware
 app.use(express.json());
@@ -34,7 +40,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/trading-database',
+        mongoUrl: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/forum-database',
         collectionName: 'sessions'
     }),
     cookie: { maxAge: 2 * 7 * 24 * 60 * 60 * 1000 } // Expires in 2 weeks
@@ -236,10 +242,6 @@ app.delete('/api/deleteReply/:postId/:replyId', async (req, res) => {
     }
 });
 
-// Updated to serve files from subdirectories
-app.use('/blacksmithing', express.static(path.join(__dirname, 'docs', 'blacksmithing')));
-app.use('/trading', express.static(path.join(__dirname, 'docs', 'trading')));
-
 // Keep the general static files serving for other assets
 app.use(express.static(path.join(__dirname, 'docs')));
 
@@ -300,8 +302,8 @@ app.get('/auth/discord/callback', async (req, res) => {
         // Save user ID in session
         req.session.userId = user._id;
 
-        // Redirect back to the trading page
-        res.redirect('/trading/trading.html');
+        // Redirect back to the forum page
+        res.redirect('/forum');
     } catch (error) {
         if (error.response) {
             console.error('Error data:', error.response.data);
@@ -325,5 +327,25 @@ app.post('/auth/discord/logout', (req, res) => {
     });
 });
 
-// sudo systemctl stop nginx if ports are being used sudo lsof -i :80 to check
-// 
+// Route for the home page
+app.get('/', (req, res) => {
+    res.render('index');
+});
+
+// Route for the projects page
+app.get('/projects', (req, res) => {
+    res.render('projects');
+});
+
+// Route for the forum page
+app.get('/forum', (req, res) => {
+    res.render('forum');
+});
+
+app.get('/blacksmithing', (req, res) => {
+    res.render('blacksmithing');
+});
+
+// Add routes for other pages similarly
+
+app.use(express.static(path.join(__dirname, 'public')));

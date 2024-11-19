@@ -2,24 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trading Page</title>
+    <title>forum Page</title>
     <!-- Include your existing CSS files here -->
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="trading.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/forum.css">
 </head>
 <body>
-    <!-- Existing Navbar -->
-    <header>
-        <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navbar:', error));
-        </script>
-    </header>
+    <%- include('partials/navbar') %>
 
     <!-- Discord Login Button -->
     <div id="login-container" class="center-text">
@@ -35,12 +24,12 @@
 
     <!-- Search Bar -->
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search trading posts...">
+        <input type="text" id="search-input" placeholder="Search forum posts...">
     </div>
 
     <!-- Posts Grid -->
     <div class="posts-grid" id="posts-grid">
-        <!-- Trading posts will be inserted here by JavaScript -->
+        <!-- forum posts will be inserted here by JavaScript -->
     </div>
 
     <!-- Post Modal -->
@@ -71,6 +60,6 @@
             <button id="close-posted-button" class="styled-button">Close</button>
         </div>
     </div>
-    <script src="trading.js"></script>
+    <script src="/js/forum.js"></script>
 </body>
 </html>
