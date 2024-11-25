@@ -1,14 +1,6 @@
 # Resirch.site
 
-Welcome to **Resirch.site** – a central hub showcasing all my projects.
-
-## Overview
-**Resirch.site** serves as a curated collection of my work, featuring a variety of projects spanning different interests and expertise.
-
-## Features
-- Easy navigation through all my projects.
-- Clean and modern landing page.
-- Simple and minimalistic design.
+Welcome to **Resirch.site**.
 
 ## Technologies Used
 - HTML
@@ -16,7 +8,7 @@ Welcome to **Resirch.site** – a central hub showcasing all my projects.
 - JavaScript
 
 ## Get Started
-Visit [resirch.site](https://resirch.site) to explore my projects.
+Visit [resirch.site](https://resirch.site).
 
 ## Contact
 Feel free to reach out via [sirchsirch@pm.me](mailto:sirchsirch@pm.me) for inquiries or feedback.
