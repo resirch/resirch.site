@@ -349,3 +349,11 @@ app.get('/blacksmithing', (req, res) => {
 // Add routes for other pages similarly
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/terms', (req, res) => {
+  res.render('terms');
+});
+
+app.get('/privacy', (req, res) => {
+  res.render('privacy');
+});
